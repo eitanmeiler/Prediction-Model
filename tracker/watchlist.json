@@ -1,0 +1,223 @@
+{
+ "_note": "Oct-Dec 2026 theatrical releases from Wikipedia 'List of American films of 2026' (pulled 2026-10-12). Wide status confirmed later from actual opening theater counts.",
+ "films": [
+  {
+   "id": "street_fighter_2026",
+   "title": "Street Fighter",
+   "release_date": "2026-10-16",
+   "wiki_articles": {
+    "film": "Street_Fighter_(2026_film)",
+    "source_ip": "Street_Fighter"
+   }
+  },
+  {
+   "id": "whalefall_2026",
+   "title": "Whalefall",
+   "release_date": "2026-10-16",
+   "wiki_articles": {
+    "film": "Whalefall_(film)"
+   }
+  },
+  {
+   "id": "clayface_2026",
+   "title": "Clayface",
+   "release_date": "2026-10-23",
+   "wiki_articles": {
+    "film": "Clayface_(film)",
+    "source_ip": "Clayface"
+   }
+  },
+  {
+   "id": "klara_and_the_sun_2026",
+   "title": "Klara and the Sun",
+   "release_date": "2026-10-23",
+   "wiki_articles": {
+    "film": "Klara_and_the_Sun_(film)",
+    "source_ip": "Klara_and_the_Sun"
+   }
+  },
+  {
+   "id": "wildwood_2026",
+   "title": "Wildwood",
+   "release_date": "2026-10-23",
+   "wiki_articles": {
+    "film": "Wildwood_(film)",
+    "source_ip": "Wildwood_(novel)"
+   }
+  },
+  {
+   "id": "the_cat_in_the_hat_2026",
+   "title": "The Cat in the Hat",
+   "release_date": "2026-11-06",
+   "wiki_articles": {
+    "film": "The_Cat_in_the_Hat_(2026_film)",
+    "source_ip": "The_Cat_in_the_Hat"
+   }
+  },
+  {
+   "id": "wild_horse_nine_2026",
+   "title": "Wild Horse Nine",
+   "release_date": "2026-11-06",
+   "wiki_articles": {
+    "film": "Wild_Horse_Nine"
+   }
+  },
+  {
+   "id": "i_play_rocky_2026",
+   "title": "I Play Rocky",
+   "release_date": "2026-11-06",
+   "wiki_articles": {
+    "film": "I_Play_Rocky"
+   }
+  },
+  {
+   "id": "club_kid_2026",
+   "title": "Club Kid",
+   "release_date": "2026-11-06",
+   "wiki_articles": {
+    "film": "Club_Kid_(film)"
+   }
+  },
+  {
+   "id": "ghost_soldier_2026",
+   "title": "Ghost Soldier",
+   "release_date": "2026-11-11",
+   "wiki_articles": {
+    "film": "Ghost_Soldier_(film)"
+   }
+  },
+  {
+   "id": "ebenezer_2026",
+   "title": "Ebenezer",
+   "release_date": "2026-11-13",
+   "wiki_articles": {
+    "film": "Ebenezer_(2026_film)",
+    "source_ip": "A_Christmas_Carol"
+   }
+  },
+  {
+   "id": "how_to_rob_a_bank_2026",
+   "title": "How to Rob a Bank",
+   "release_date": "2026-11-13",
+   "wiki_articles": {
+    "film": "How_to_Rob_a_Bank_(2026_film)"
+   }
+  },
+  {
+   "id": "paper_tiger_2026",
+   "title": "Paper Tiger",
+   "release_date": "2026-11-13",
+   "wiki_articles": {
+    "film": "Paper_Tiger_(2026_film)"
+   }
+  },
+  {
+   "id": "madden_2026",
+   "title": "Madden",
+   "release_date": "2026-11-18",
+   "wiki_articles": {
+    "film": "Madden_(film)",
+    "source_ip": "John_Madden"
+   }
+  },
+  {
+   "id": "the_hunger_games_sunrise_on_the_reaping_2026",
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "release_date": "2026-11-20",
+   "wiki_articles": {
+    "film": "The_Hunger_Games:_Sunrise_on_the_Reaping",
+    "source_ip": "Sunrise_on_the_Reaping"
+   }
+  },
+  {
+   "id": "focker_in_law_2026",
+   "title": "Focker-in-Law",
+   "release_date": "2026-11-25",
+   "wiki_articles": {
+    "film": "Focker-in-Law"
+   }
+  },
+  {
+   "id": "hexed_2026",
+   "title": "Hexed",
+   "release_date": "2026-11-25",
+   "wiki_articles": {
+    "film": "Hexed_(2026_film)"
+   }
+  },
+  {
+   "id": "violent_night_2_2026",
+   "title": "Violent Night 2",
+   "release_date": "2026-12-04",
+   "wiki_articles": {
+    "film": "Violent_Night_2"
+   }
+  },
+  {
+   "id": "behemoth_2026",
+   "title": "Behemoth!",
+   "release_date": "2026-12-04",
+   "wiki_articles": {
+    "film": "Behemoth!"
+   }
+  },
+  {
+   "id": "the_debut_2026",
+   "title": "The Debut",
+   "release_date": "2026-12-11",
+   "wiki_articles": {
+    "film": "The_Debut_(2026_film)"
+   }
+  },
+  {
+   "id": "avengers_doomsday_2026",
+   "title": "Avengers: Doomsday",
+   "release_date": "2026-12-18",
+   "wiki_articles": {
+    "film": "Avengers:_Doomsday"
+   }
+  },
+  {
+   "id": "dune_part_three_2026",
+   "title": "Dune: Part Three",
+   "release_date": "2026-12-18",
+   "wiki_articles": {
+    "film": "Dune:_Part_Three",
+    "source_ip": "Dune_Messiah"
+   }
+  },
+  {
+   "id": "the_angry_birds_movie_3_2026",
+   "title": "The Angry Birds Movie 3",
+   "release_date": "2026-12-23",
+   "wiki_articles": {
+    "film": "The_Angry_Birds_Movie_3",
+    "source_ip": "Angry_Birds"
+   }
+  },
+  {
+   "id": "jumanji_open_world_2026",
+   "title": "Jumanji: Open World",
+   "release_date": "2026-12-25",
+   "wiki_articles": {
+    "film": "Jumanji:_Open_World"
+   }
+  },
+  {
+   "id": "werwulf_2026",
+   "title": "Werwulf",
+   "release_date": "2026-12-25",
+   "wiki_articles": {
+    "film": "Werwulf"
+   }
+  },
+  {
+   "id": "mr_irrelevant_2026",
+   "title": "Mr. Irrelevant",
+   "release_date": "2026-12-25",
+   "wiki_articles": {
+    "film": "Mr._Irrelevant_(film)"
+   }
+  }
+ ]
+}
