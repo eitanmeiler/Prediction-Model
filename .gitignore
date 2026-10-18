@@ -4,3 +4,8 @@ __pycache__/
 .DS_Store
 data/live
 data/raw/boxoffice/
+.env.*
+!.env.example
+*.pem
+*.key
+keys.env

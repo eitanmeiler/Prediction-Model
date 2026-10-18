@@ -30,7 +30,9 @@ def fetch_views(article: str, start: datetime.date, end: datetime.date):
                                                  resp.headers, None)
         except urllib.error.HTTPError as e:
             if e.code == 404:
-                return None
+                body = e.read().decode("utf-8", "ignore")
+                # Wikimedia publishes daily data with a lag of 1-3 days; that also comes back as 404
+                return "LAG" if "do not have data for those date" in body else None
             if attempt < MAX_RETRIES:
                 time.sleep(BACKOFF * (attempt + 1))
                 continue
@@ -78,6 +80,7 @@ def main():
     rows_added = 0
     errors = 0
     problems = []
+    lagged = 0
     films_processed = 0
 
     for film in watchlist.get("films", []):
@@ -103,6 +106,9 @@ def main():
             if isinstance(result, Exception):
                 errors += 1
                 problems.append(f"{fid}/{role}: HTTP {getattr(result, 'code', '?')}")
+                continue
+            if result == "LAG":
+                lagged += 1
                 continue
             if result is None:  # 404: article missing or no views in range
                 problems.append(f"{fid}/{role}: 404 {article}")
@@ -138,6 +144,8 @@ def main():
                                   default=latest.get(key))
             time.sleep(SLEEP_BETWEEN)
 
+    if lagged:
+        problems.append(f"{lagged} articles: Wikimedia has not published data after the last stored date yet (normal lag, retried next run)")
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     if not args.dry_run:
         with LOG_PATH.open("a") as logf:
