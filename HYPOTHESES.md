@@ -67,3 +67,14 @@ The free data route replaces licensed data, so two definitions change:
   (`pipeline/extract_openings.py`). Its error rate is measured on a random sample of about 40 films checked by hand
   against Box Office Mojo, and reported. If a licensed source (OpusData) becomes available, it replaces Wikipedia,
   and Wikipedia figures become a cross-check.
+
+## Amendment 2 (2026-10-19), made before any modeling
+
+Box Office Mojo's "In-year releases" tables include official **opening weekend gross and opening theater count**,
+so Amendment 1's Wikipedia extraction is no longer needed:
+- **Population:** films that **opened in ≥ 800 theaters** (BOM "Open Th"), 2010–2025. 800 is used instead of 600
+  because the copied tables cover films down to 800 opening theaters in *every* year (2025's page stops at 800). That
+  keeps the population definition identical across years. Re-releases are excluded; event cinema (concerts, Fathom
+  one-night events, TV-episode screenings) is flagged and excluded from the main models.
+- **Target source:** BOM opening weekend gross for all years (one source across the whole period, so a change
+  between periods can't come from switching sources). Wikipedia extraction is kept only as an optional cross-check.
