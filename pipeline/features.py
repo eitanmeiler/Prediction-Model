@@ -103,6 +103,32 @@ def competition(df):
     return pd.DataFrame(rows)
 
 
+def live_attention(df):
+    """Attention features for upcoming films from the daily tracker (same windows as the historical pull)."""
+    import json
+    live = ROOT / "data" / "live" / "wiki_pageviews.csv"
+    if not live.exists():
+        return df
+    pv = pd.read_csv(live, parse_dates=["date"])
+    watch = {f["title"]: f["id"] for f in json.loads((ROOT / "tracker" / "watchlist.json").read_text())["films"]}
+    for i, r in df[df["upcoming"].astype(bool)].iterrows():
+        wid = watch.get(r.title)
+        if not wid:
+            continue
+        s = pv[(pv.film_id == wid) & (pv.role == "film")].set_index("date").views
+        rel = r.release_date
+        def m(a, b):
+            days = pd.date_range(rel - pd.Timedelta(days=a), rel - pd.Timedelta(days=b))
+            got = s.reindex(days)
+            return got.mean() if got.notna().sum() >= max(3, len(days) // 2) else np.nan
+        lvl, late, early, t60 = m(28, 8), m(14, 8), m(28, 22), m(60, 29)
+        df.loc[i, ["att_level", "att_accel", "att_t60"]] = [np.log1p(lvl), np.log1p(late) - np.log1p(early), np.log1p(t60)]
+        src = pv[(pv.film_id == wid) & (pv.role == "source_ip")]
+        if len(src):  # tracker history starts mid-2026, shorter than the 365-day window: use what exists
+            df.loc[i, "src_att"] = np.log1p(src.views.mean())
+    return df
+
+
 def main():
     films = pd.read_csv(FILMS, parse_dates=["release_date"])
     tmdb = pd.read_csv(TMDB)
@@ -163,6 +189,14 @@ def main():
         w = mk[(mk.release_date <= d - KNOWN_LAG) & (mk.release_date >= d - pd.Timedelta(days=97))]
         lvl.append((w.log_opening.median() if len(w) >= 5 else np.nan, len(w)))
     df["mkt_recent_median"], df["mkt_recent_n"] = zip(*lvl)
+
+    # pre-release Wikipedia attention (2016+ historical pull; tracker data for upcoming films)
+    att_file = ROOT / "data" / "interim" / "wiki_attention.csv"
+    if att_file.exists():
+        att = pd.read_csv(att_file)
+        att.loc[att.att_suspect_rename, ["att_level", "att_accel", "att_t60"]] = np.nan
+        df = df.merge(att[["film_id", "att_level", "att_accel", "att_t60", "src_att"]], on="film_id", how="left")
+        df = live_attention(df)
 
     df["period"] = np.select([df.year <= 2019, df.year <= 2021, df.year <= 2025], ["pre", "covid", "post"], default="other")
     df["in_model"] = ~df["upcoming"].astype(bool) & df["matched"] & ~df["event"].astype(bool) & ~df["late_theatrical"] & df["opening"].gt(0)

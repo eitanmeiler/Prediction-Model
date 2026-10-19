@@ -61,7 +61,8 @@ if page == "Upcoming forecasts":
     c1, c2, c3 = st.columns(3)
     c1.metric("Forecast", money(r.forecast_m), r.checkpoint)
     c2.metric("80% range", f"{money(r.lo80_m)} – {money(r.hi80_m)}")
-    c3.metric("CatBoost (second opinion)", money(r.catboost_m))
+    c3.metric("CatBoost + attention", money(r.get("att_m")) if pd.notna(r.get("att_m")) else "after T-8",
+              f"{money(r.att_lo80_m)} – {money(r.att_hi80_m)}" if pd.notna(r.get("att_m")) else "attention window not complete")
     st.markdown("**Biggest pushes vs. an average film** (log-opening units; + raises the forecast)")
     st.dataframe(pd.DataFrame([x.rsplit(" ", 1) for x in r.drivers.split("; ")], columns=["feature", "push"]),
                  hide_index=True, width="stretch")

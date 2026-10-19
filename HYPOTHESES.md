@@ -78,3 +78,14 @@ so Amendment 1's Wikipedia extraction is no longer needed:
   one-night events, TV-episode screenings) is flagged and excluded from the main models.
 - **Target source:** BOM opening weekend gross for all years (one source across the whole period, so a change
   between periods can't come from switching sources). Wikipedia extraction is kept only as an optional cross-check.
+
+## Amendment 3 (2026-10-19), during development — before the sealed 2025 run
+
+- **Budget removed** from all models: TMDB budgets are entered after release (leakage; see LIMITATIONS.md).
+- **Star-power tests start in 2013** (2010-2012 is the burn-in for cast track records; data begins in 2010).
+- **Market-share sensitivity target replaced** by year fixed effects (H1) and a "current market level" feature
+  (models): weekend-total box office was not collected, so share of the weekend market can't be computed.
+- **H3 model:** H3 was written without naming a model. Development results are reported for both ridge and
+  CatBoost; the confirmatory run will report both, and the conclusion will not rest on picking the better one.
+- **Development results so far** (2025 sealed): H1 not supported; H2 not supported once 2022 is excluded;
+  H3/H3b supported for CatBoost (weakly for ridge); H4 borderline; H5 positive but misses the Holm threshold narrowly.

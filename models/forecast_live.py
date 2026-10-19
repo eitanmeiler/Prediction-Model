@@ -23,7 +23,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "models"))
 from backtest import EXCLUDED_YEARS, catboost_model  # noqa: E402
-from feature_sets import CATEGORICAL, checkpoint_features  # noqa: E402
+from feature_sets import ATTENTION, CATEGORICAL, checkpoint_features  # noqa: E402
 
 TABLE = ROOT / "data" / "processed" / "model_table.csv"
 BACKTEST = ROOT / "data" / "processed" / "backtest_predictions.csv"
@@ -71,9 +71,9 @@ def comparables(model, X, row, train, k=5):
     return "; ".join(f"{t} ({y}) ${np.exp(o) / 1e6:.0f}M" for t, y, o in zip(near.title, near.year, near.log_opening))
 
 
-def interval(checkpoint):
+def interval(checkpoint, model="ridge"):
     bt = pd.read_csv(BACKTEST)
-    g = bt[(bt.model == "ridge") & (bt.checkpoint == checkpoint)]
+    g = bt[(bt.model == model) & (bt.checkpoint == checkpoint)]
     recent = sorted(g.quarter.unique())[-8:]
     e = g[g.quarter.isin(recent)].err
     return e.quantile(0.10), e.quantile(0.90)
@@ -101,8 +101,10 @@ def main():
         feats = checkpoint_features(cp)
         model, X = fit_ridge(train, feats)
         cb = catboost_model(train, rows, feats)
+        att = catboost_model(train[train.year >= 2016], rows, feats + ATTENTION)
         lo, hi = interval(cp)
-        for (_, r), cbp in zip(rows.iterrows(), cb):
+        alo, ahi = interval(cp, "catboost_att")
+        for (_, r), cbp, ap in zip(rows.iterrows(), cb, att):
             one = rows.loc[[r.name]]
             p = model.predict(X(one))[0]
             out.append({"frozen_at_utc": now, "git_commit": commit, "film_id": r.film_id, "title": r.title,
@@ -110,13 +112,19 @@ def main():
                         "train_through": args.train_through,
                         "forecast_m": round(np.exp(p) / 1e6, 1), "lo80_m": round(np.exp(p + lo) / 1e6, 1),
                         "hi80_m": round(np.exp(p + hi) / 1e6, 1), "catboost_m": round(np.exp(cbp) / 1e6, 1),
+                        "att_m": round(np.exp(ap) / 1e6, 1), "att_lo80_m": round(np.exp(ap + alo) / 1e6, 1),
+                        "att_hi80_m": round(np.exp(ap + ahi) / 1e6, 1),
+                        "att_inputs_complete": bool(r[["att_level", "att_accel"]].notna().all()),
                         "drivers": drivers(model, X, one, train), "comparables": comparables(model, X, one, train)})
     res = pd.DataFrame(out)
+    # missing attention reads as "obscure film" to the model: only report it once the T-28..T-8 window is complete
+    incomplete = ~res.att_inputs_complete
+    res.loc[incomplete, ["att_m", "att_lo80_m", "att_hi80_m"]] = np.nan
     res["status"] = "draft (no 2026 market data)" if missing_market else "draft"
     (ROOT / "forecasts").mkdir(exist_ok=True)
     res.to_csv(ROOT / "forecasts" / "latest_draft.csv", index=False)  # read by the dashboard; overwritten each run
     pd.set_option("display.width", 220, "display.max_colwidth", 90)
-    print(res[["title", "release_date", "checkpoint", "forecast_m", "lo80_m", "hi80_m", "catboost_m"]].to_string(index=False))
+    print(res[["title", "release_date", "checkpoint", "forecast_m", "lo80_m", "hi80_m", "att_m", "att_lo80_m", "att_hi80_m", "att_inputs_complete"]].to_string(index=False))
     for r in res.itertuples():
         print(f"\n{r.title}: drivers [{r.drivers}]\n  comparables: {r.comparables}")
     if missing_market:

@@ -26,7 +26,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 warnings.filterwarnings("ignore")
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "models"))
-from feature_sets import CATEGORICAL, checkpoint_features  # noqa: E402
+from feature_sets import ATTENTION, CATEGORICAL, checkpoint_features  # noqa: E402
 
 TABLE = ROOT / "data" / "processed" / "model_table.csv"
 PRED_OUT = ROOT / "data" / "processed" / "backtest_predictions.csv"
@@ -87,6 +87,8 @@ def run():
             preds = {"comps": comps_baseline(train, test),
                      "ridge": ridge_model(train, test, feats),
                      "catboost": catboost_model(train, test, feats)}
+            if q.year >= 2017:  # attention exists from mid-2015: train on 2016+ films only
+                preds["catboost_att"] = catboost_model(train[train.year >= 2016], test, feats + ATTENTION)
             for model, p in preds.items():
                 rows.append(pd.DataFrame({"film_id": test.film_id.values, "title": test.title.values,
                                           "year": test.year.values, "quarter": str(q), "checkpoint": cp,
@@ -133,12 +135,15 @@ def bootstrap_gain(pred, cp, a="catboost", b="ridge", n=2000, seed=0):
 
 def summarize(pred):
     overall = pred.groupby(["checkpoint", "model"]).apply(metrics).round(1)
+    common = pred[pred.year >= 2017]
+    overall_17 = common.groupby(["checkpoint", "model"]).apply(metrics).round(1)
     by_period = pred.assign(period=np.where(pred.year <= 2019, "2014-2019", "2022-2024")) \
         .groupby(["checkpoint", "model", "period"]).apply(metrics).round(1)
     lines = ["# Backtest summary", "",
              "Rolling quarterly retrain, 2014-2024 (2020-2021 excluded, 2025 sealed). Errors are on opening-weekend "
              "gross; *median abs % error* is the typical miss, *within 25%* the share of films forecast within ±25%.",
-             "", "## Overall", "", overall.to_markdown(), "", "## By period (H2)", "", by_period.to_markdown(), "",
+             "", "## Overall (2014-2024; catboost_att only scored from 2017)", "", overall.to_markdown(), "",
+             "## Same films for every model (2017-2024)", "", overall_17.to_markdown(), "", "## By period (H2)", "", by_period.to_markdown(), "",
              "## Bias by year (mean of actual − predicted, log scale; negative = over-forecast)", "", pred[pred.checkpoint == "T-7"].pivot_table(index="year", columns="model", values="err", aggfunc="mean").round(3).to_markdown(), "",
              "## Is CatBoost better than ridge? (paired bootstrap on MAE of log opening)", ""]
     for cp in ("T-7", "T-28"):

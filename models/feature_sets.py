@@ -19,3 +19,7 @@ LATE = ["open_theaters", "comp_same_wkend_theaters", "comp_recent_open_sum", "co
 
 def checkpoint_features(cp):
     return EARLY + LATE if cp == "T-7" else EARLY
+
+
+# pre-release Wikipedia attention (H3-H5); available for 2016+ films and tracked upcoming films
+ATTENTION = ["att_level", "att_accel", "att_t60", "src_att"]
