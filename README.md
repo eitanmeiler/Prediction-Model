@@ -21,3 +21,5 @@ pre-release audience attention explains the hits and flops that conventional exp
 python3 tracker/track_wiki.py --dry-run
 ```
 After editing `track_wiki.py` or `watchlist.json`, run `tracker/install.sh` to update the scheduled copy.
+
+This product uses the TMDB API but is not endorsed or certified by TMDB.
