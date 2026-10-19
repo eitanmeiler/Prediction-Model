@@ -7,7 +7,7 @@ CATEGORICAL = ["mpaa", "studio", "primary_genre"]
 
 # known a month or more before release
 EARLY = (["month", "weekofyear", "opens_weekday", "hol_memorial", "hol_july4", "hol_labor", "hol_thanksgiving",
-          "hol_christmas", "hol_presidents_mlk", "runtime", "log_budget", "budget_known", "english",
+          "hol_christmas", "hol_presidents_mlk", "runtime", "english",  # budget dropped: TMDB budgets are filled in after release (leakage)
           "in_collection", "sequel_like", "src_novel", "src_comic", "src_game", "src_true_story", "src_toy_tv",
           "remake", "star_mean", "star_best", "star_films", "star_n_with_history", "director_mean",
           "director_films", "franchise_prev_films", "franchise_prev_mean", "franchise_prev_last",

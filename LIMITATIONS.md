@@ -53,3 +53,23 @@ issues come up.
 - **[accepted] Honest accuracy will look modest** (box office is dominated by a few huge hits). Success = beating
   the comparable-films baseline with well-calibrated ranges.
 - **[accepted] The repo is private.** Any public demo shows forecasts and derived features only.
+
+## Found while building (2026-10-19)
+- **[mitigated] TMDB budgets are retrospective.** Budgets are usually entered after release; upcoming films have none.
+  Using budget leaked future information and punished upcoming films, so it was dropped from all models. Accuracy
+  barely changed (T-7 typical miss 37.3% → 37.8%).
+- **[mitigated] Market-level shift after 2020.** Models trained on the larger pre-COVID market over-forecast 2022 by
+  ~1.7×. A "current market level" feature (median opening of the previous 3 months) fixed most of it; 2022 itself is
+  still over-forecast (reopening year, no comparable training data).
+- **[accepted] Population cut at 800 opening theaters** (BOM tables stop at 800 in 2025). Small releases opening in
+  600–799 theaters are not in the data.
+- **[accepted] Same-title mix-ups in TMDB** were fixed with stricter rules plus ~15 hand-checked overrides (listed
+  in `pipeline/tmdb_enrich.py`). Unchecked mismatches may remain in films whose titles and dates both matched.
+- **[accepted] Source-work links come from Wikidata ("based on").** Coverage is incomplete (e.g. Five Nights at
+  Freddy's has no link), so H4 covers only adaptations Wikidata knows about.
+- **[accepted] Wikipedia renames.** Pageviews count one title; renamed/late-created articles undercount pre-release
+  views. Films with < 20 days of recorded views are treated as missing attention.
+- **[open] Wikimedia rate limits** this connection (HTTP 429). The historical pull runs at ~6 films/minute; the daily
+  tracker shares the same limit.
+- **[accepted] Ridge and CatBoost tie** in the backtest (no significant difference), so ridge — the simpler model —
+  is the primary forecaster, as planned.
