@@ -6,7 +6,8 @@
   const t = [...document.querySelectorAll('table')].sort((a, b) => b.rows.length - a.rows.length)[0];
   if (!t) { alert('No table found on this page.'); return; }
   const rows = [...t.rows].map(r => [...r.cells].map(c => c.innerText.trim().replace(/\s+/g, ' ')).join('\t'));
-  const ti = rows[0].split('\t').indexOf('Theaters');
+  const hdr = rows[0].split('\t').map(h => h.trim());
+  const ti = hdr.findIndex(h => h === 'Theaters' || h === 'Max Th' || h.startsWith('Max Th'));
   if (ti < 0) { alert('Could not find the Theaters column.'); return; }
   const th = rows.slice(1).map(r => parseInt((r.split('\t')[ti] || '').replace(/\D/g, '')) || 0);
   if (!th.every((v, i) => i === 0 || v <= th[i - 1])) {
