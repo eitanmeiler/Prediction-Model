@@ -112,6 +112,9 @@ def main():
                         "hi80_m": round(np.exp(p + hi) / 1e6, 1), "catboost_m": round(np.exp(cbp) / 1e6, 1),
                         "drivers": drivers(model, X, one, train), "comparables": comparables(model, X, one, train)})
     res = pd.DataFrame(out)
+    res["status"] = "draft (no 2026 market data)" if missing_market else "draft"
+    (ROOT / "forecasts").mkdir(exist_ok=True)
+    res.to_csv(ROOT / "forecasts" / "latest_draft.csv", index=False)  # read by the dashboard; overwritten each run
     pd.set_option("display.width", 220, "display.max_colwidth", 90)
     print(res[["title", "release_date", "checkpoint", "forecast_m", "lo80_m", "hi80_m", "catboost_m"]].to_string(index=False))
     for r in res.itertuples():
