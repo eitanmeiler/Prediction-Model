@@ -57,3 +57,13 @@ attention level itself.
   model's population, so no confirmatory claim is made.
 - All other theatrical releases from Oct to Dec 2026 in `tracker/watchlist.json` get forecasts if they open wide. A
   single film is an anecdote; the backtest is the real validation.
+
+## Amendment 1 (2026-10-18), made before any historical data was collected
+
+The free data route replaces licensed data, so two definitions change:
+- **Population:** "opened in ≥ 600 theaters" becomes **widest release ≥ 600 theaters** (Box Office Mojo yearly
+  tables, copied manually). Opening theater counts are not available for free.
+- **Target source:** opening weekend gross is extracted from English Wikipedia article text
+  (`pipeline/extract_openings.py`). Its error rate is measured on a random sample of about 40 films checked by hand
+  against Box Office Mojo, and reported. If a licensed source (OpusData) becomes available, it replaces Wikipedia,
+  and Wikipedia figures become a cross-check.

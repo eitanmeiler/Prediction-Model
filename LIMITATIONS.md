@@ -4,12 +4,14 @@ Written 2026-10-12, before modeling. Each item is marked **[open]**, **[mitigate
 issues come up.
 
 ## Data access
-- **[open] Box office actuals.** Box Office Mojo's terms prohibit automated scraping. The Numbers blocks scripted
+- **[mitigated] Box office actuals.** Free route chosen (HYPOTHESES.md, Amendment 1): film list and widest theater
+  counts come from the Box Office Mojo yearly tables, copied by hand; opening weekend comes from Wikipedia text. Known
+  error sources: Sunday estimates instead of actuals, extractor misreads, films with no article. The error rate is
+  measured by hand-checking a sample. Earlier note: Box Office Mojo's terms prohibit automated scraping. The Numbers blocks scripted
   requests (HTTP 403). This project does not scrape either site. Route: the yearly tables are copied manually for
   personal, non-commercial research, or a licence is bought (OpusData). Raw box office tables are never published.
-- **[open] Python environment.** The only Python is the system 3.9.6, with no pandas, CatBoost or Streamlit. Needs uv
-  plus Python 3.12.
-- **[open] API keys.** TMDB (metadata) and the YouTube Data API (trailer views) each need a free key created by the
+- **[mitigated] Python environment.** uv + Python 3.12 in `.venv`.
+- **[mitigated] API keys.** Both created and working; a pre-commit hook blocks keys from reaching git. TMDB (metadata) and the YouTube Data API (trailer views) each need a free key created by the
   owner. Keys go in `.env`, which is gitignored.
 - **[mitigated] Scheduled jobs can't read ~/Desktop** (macOS privacy protection). The tracker runs from
   `~/Library/Application Support/PredictionModel`, and `data/live` is a link to it. See `tracker/install.sh`.

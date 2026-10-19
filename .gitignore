@@ -9,3 +9,4 @@ data/raw/boxoffice/
 *.pem
 *.key
 keys.env
+data/cache/
