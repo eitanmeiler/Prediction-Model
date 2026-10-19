@@ -22,6 +22,7 @@ MAJORS = {
     "Sony Pictures Releasing": "Sony", "Columbia Pictures": "Sony", "TriStar Pictures": "Sony", "Screen Gems": "Sony",
     "Paramount Pictures": "Paramount", "20th Century Fox": "Fox", "20th Century Studios": "Fox",
     "Lionsgate": "Lionsgate", "Summit Entertainment": "Lionsgate",
+    "Amazon MGM Studios": "Amazon MGM", "Metro-Goldwyn-Mayer (MGM)": "Amazon MGM", "United Artists Releasing": "Amazon MGM",
 }
 STREAMING_FIRST = {"Soul", "Turning Red", "Luca", "KPop Demon Hunters", "Kill Bill: The Whole Bloody Affair"}
 GENRES = ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Family", "Fantasy",
@@ -64,8 +65,9 @@ def prior_track_record(df, people_col, name):
             f"{name}_films": sum(x[1] for x in per_person),
             f"{name}_n_with_history": len(per_person),
         })
-        for p in people:
-            hist.setdefault(p, []).append((r.release_date, r.log_opening))
+        if pd.notna(r.log_opening):  # upcoming films have no opening yet
+            for p in people:
+                hist.setdefault(p, []).append((r.release_date, r.log_opening))
     return pd.DataFrame(rows)
 
 
@@ -78,7 +80,7 @@ def franchise_record(df):
                      "franchise_prev_films": len(past),
                      "franchise_prev_mean": np.mean(past) if past else np.nan,
                      "franchise_prev_last": past[-1] if past else np.nan})
-        if pd.notna(cid):
+        if pd.notna(cid) and pd.notna(r.log_opening):
             hist.setdefault(cid, []).append((r.release_date, r.log_opening))
     return pd.DataFrame(rows)
 
@@ -105,6 +107,12 @@ def main():
     films = pd.read_csv(FILMS, parse_dates=["release_date"])
     tmdb = pd.read_csv(TMDB)
     df = films.merge(tmdb, on="film_id", how="left")
+    df["upcoming"] = False
+    up_file = ROOT / "data" / "interim" / "upcoming.csv"
+    if up_file.exists():  # future releases: same features, no opening yet
+        up = pd.read_csv(up_file, parse_dates=["release_date"])
+        up = up[~up.film_id.isin(df.film_id)]
+        df = pd.concat([df, up], ignore_index=True)
     df["log_opening"] = np.log(df["opening"])
     df["matched"] = df["tmdb_id"].notna()
 
@@ -134,6 +142,10 @@ def main():
              competition(df)]
     for f in feats:
         df = df.merge(f, on="film_id", how="left")
+    # pre-registered: star power is undefined for animated films (voice casts) -> missing
+    anim = df["g_animation"].astype(bool)
+    df.loc[anim, ["star_mean", "star_best"]] = np.nan
+    df.loc[anim, ["star_films", "star_n_with_history"]] = 0
     df["sequel_like"] = df["sequel"].fillna(False) | (df["franchise_prev_films"] > 0)
     # distributor's recent track record (last 2 years of its wide openings, before this film)
     dist = []
@@ -153,7 +165,7 @@ def main():
     df["mkt_recent_median"], df["mkt_recent_n"] = zip(*lvl)
 
     df["period"] = np.select([df.year <= 2019, df.year <= 2021, df.year <= 2025], ["pre", "covid", "post"], default="other")
-    df["in_model"] = df["matched"] & ~df["event"] & ~df["late_theatrical"] & df["opening"].gt(0)
+    df["in_model"] = ~df["upcoming"].astype(bool) & df["matched"] & ~df["event"].astype(bool) & ~df["late_theatrical"] & df["opening"].gt(0)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(OUT, index=False)
     print(f"{len(df)} films, {df.in_model.sum()} usable for modeling; {df.shape[1]} columns -> {OUT.relative_to(ROOT)}")

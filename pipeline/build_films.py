@@ -47,7 +47,8 @@ def load_year(year):
 
 
 def main():
-    films = pd.concat([load_year(y) for y in range(2010, 2026)], ignore_index=True)
+    years = [y for y in range(2010, 2027) if (RAW / f"{y}.tsv").exists()]  # 2026 = current year, partial
+    films = pd.concat([load_year(y) for y in years], ignore_index=True)
     total = len(films)
     films["rerelease"] = films["title"].str.contains(RERELEASE)
     films["event"] = films["distributor"].isin(EVENT_DISTRIBUTORS) | films["title"].str.contains(EVENT_TITLE)

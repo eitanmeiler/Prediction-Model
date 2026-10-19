@@ -37,7 +37,7 @@ FIRST_TEST, LAST_TEST = "2014Q1", "2024Q4"
 
 def load():
     df = pd.read_csv(TABLE, parse_dates=["release_date"])
-    df = df[df["in_model"] & ~df["year"].isin(EXCLUDED_YEARS | {2025})].copy()
+    df = df[df["in_model"] & ~df["year"].isin(EXCLUDED_YEARS) & (df["year"] <= 2024)].copy()  # 2025 sealed, 2026 = live
     df["primary_genre"] = df["genres"].fillna("Unknown").str.split("|").str[0]
     df["quarter"] = df["release_date"].dt.to_period("Q")
     return df

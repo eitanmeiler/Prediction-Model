@@ -7,7 +7,7 @@ import re, subprocess, time
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "raw" / "boxoffice"
-YEARS = range(2010, 2026)
+YEARS = range(2010, 2027)  # 2026 = current year; recopy weekly to refresh
 OUT.mkdir(parents=True, exist_ok=True)
 
 def done(y):
@@ -33,7 +33,7 @@ while missing():
         if "Max Th" not in hdr or "Opening" not in hdr:
             print(f"REJECTED {year}: wrong view (no Opening column). Open {link(year)}", flush=True)
         elif year not in YEARS or len(rows) < 50:
-            print(f"ignored {year}: {len(rows)} rows (need a 2010-2025 page with the full table)", flush=True)
+            print(f"ignored {year}: {len(rows)} rows (need a 2010-2026 page with the full table)", flush=True)
         else:
             ti = hdr.index("Max Th")
             th = [int(r[ti].replace(",", "")) for r in rows if len(r) > ti and r[ti].replace(",", "").isdigit()]
