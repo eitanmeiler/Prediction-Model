@@ -65,6 +65,7 @@ FORCE_ID = {
     "20241122_bonhoeffer": 1079244,
     "20151204_the_letters": 218275, "20170127_gold": 334524, "20240315_one_life": 760774,
     "20240524_sight": 1057006, "20150417_unfriended": 277685,  # same-title foreign films ranked first
+    "20120120_haywire": 70435, "20181124_pok_mon_the_movie_the_power_of_us": 494407,  # correct, TMDB has no US date
 }
 # Correct title match, but TMDB's dates are years off (shelved films, festival premieres, a re-cut released later)
 DATE_OK = {"20101001_case_39", "20120309_silent_house", "20251205_kill_bill_the_whole_bloody_affair"}
