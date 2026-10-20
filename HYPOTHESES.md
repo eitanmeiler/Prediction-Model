@@ -89,3 +89,17 @@ so Amendment 1's Wikipedia extraction is no longer needed:
   CatBoost; the confirmatory run will report both, and the conclusion will not rest on picking the better one.
 - **Development results so far** (2025 sealed): H1 not supported; H2 not supported once 2022 is excluded;
   H3/H3b supported for CatBoost (weakly for ridge); H4 borderline; H5 positive but misses the Holm threshold narrowly.
+
+## Amendment 4 (2026-10-19) — new hypothesis H6, written before it was tested
+
+Motivated by exploratory case studies (`docs/case_studies_dev.md`): faith and Spanish-language over-performers
+are not captured by English-Wikipedia attention.
+
+**H6: Community audiences are systematically under-forecast.** Films released by faith-focused distributors
+(Angel, Affirm Films, Pure Flix, Pure Flix / Quality Flix, Fathom Events *non-event* releases, Kingdom Story
+Company titles via Lionsgate are NOT included — distributor field only) or Spanish-language distributors
+(Pantelion Films) have **positive mean residuals** in the traditional T-7 model (actual > forecast).
+- *Exploratory check:* 2014-2025 backtest residuals (already seen data — descriptive only).
+- *Confirmatory test:* **2026 releases only** (not yet seen at the time of writing): mean residual of flagged
+  films > 0, one-sided, with the frozen T-7 model. If fewer than 8 flagged 2026 films exist, H6 is reported as
+  "insufficient data", not tested.
