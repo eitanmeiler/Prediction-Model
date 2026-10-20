@@ -95,11 +95,12 @@ so Amendment 1's Wikipedia extraction is no longer needed:
 Motivated by exploratory case studies (`docs/case_studies_dev.md`): faith and Spanish-language over-performers
 are not captured by English-Wikipedia attention.
 
-**H6: Community audiences are systematically under-forecast.** Films released by faith-focused distributors
-(Angel, Affirm Films, Pure Flix, Pure Flix / Quality Flix, Fathom Events *non-event* releases, Kingdom Story
-Company titles via Lionsgate are NOT included — distributor field only) or Spanish-language distributors
-(Pantelion Films) have **positive mean residuals** in the traditional T-7 model (actual > forecast).
+**H6: Community audiences are systematically under-forecast.** Films whose Box Office Mojo distributor is
+faith-focused (**Angel, Affirm Films, Pure Flix Entertainment, Pure Flix / Quality Flix**) or Spanish-language
+(**Pantelion Films**) have **positive mean residuals** in the traditional T-7 model (actual > forecast).
 - *Exploratory check:* 2014-2025 backtest residuals (already seen data — descriptive only).
 - *Confirmatory test:* **2026 releases only** (not yet seen at the time of writing): mean residual of flagged
   films > 0, one-sided, with the frozen T-7 model. If fewer than 8 flagged 2026 films exist, H6 is reported as
   "insufficient data", not tested.
+- *Correction (same day, before any H6 computation):* the distributor list was reworded to the five names above;
+  an earlier draft ambiguously mentioned Fathom Events and Kingdom Story Company.
