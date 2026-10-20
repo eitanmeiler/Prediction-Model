@@ -23,3 +23,6 @@ def checkpoint_features(cp):
 
 # pre-release Wikipedia attention (H3-H5); available for 2016+ films and tracked upcoming films
 ATTENTION = ["att_level", "att_accel", "att_t60", "src_att"]
+
+# community-audience classes (Amendment 5)
+COMMUNITY = ["c1_creator_native", "c2_game_ip", "c3_anime", "c4_faith", "c5_spanish"]

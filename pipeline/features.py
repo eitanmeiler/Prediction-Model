@@ -198,6 +198,19 @@ def main():
         df = df.merge(att[["film_id", "att_level", "att_accel", "att_t60", "src_att"]], on="film_id", how="left")
         df = live_attention(df)
 
+    # community-audience classes (HYPOTHESES.md Amendment 5; C1 list frozen in data/reference/creator_native_c1.csv)
+    c1 = pd.read_csv(ROOT / "data" / "reference" / "creator_native_c1.csv")
+    c1 = c1[c1.included.eq("yes")]
+    df["c1_creator_native"] = [(t, y) in set(zip(c1.title, c1.year)) for t, y in zip(df.title, df.year)]
+    df["c2_game_ip"] = df["src_game"].fillna(False).astype(bool)
+    df["c3_anime"] = df["original_language"].eq("ja") & df["g_animation"].astype(bool)
+    faith_dist = {"Angel", "Affirm Films", "Pure Flix Entertainment", "Pure Flix / Quality Flix"}
+    faith_kw = {"christian film", "christian faith", "faith-based"}  # exact TMDB keywords (Amendment 5 correction)
+    df["c4_faith"] = df["distributor"].isin(faith_dist) | df["keywords"].fillna("").str.split("|").apply(
+        lambda ks: bool(faith_kw & set(ks)))
+    df["c5_spanish"] = df["original_language"].eq("es") | df["distributor"].eq("Pantelion Films")
+    df["log_total_over_opening"] = np.log(df["domestic_total"] / df["opening"])
+
     df["period"] = np.select([df.year <= 2019, df.year <= 2021, df.year <= 2025], ["pre", "covid", "post"], default="other")
     df["in_model"] = ~df["upcoming"].astype(bool) & df["matched"] & ~df["event"].astype(bool) & ~df["late_theatrical"] & df["opening"].gt(0)
     OUT.parent.mkdir(parents=True, exist_ok=True)

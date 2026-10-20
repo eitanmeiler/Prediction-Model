@@ -135,3 +135,6 @@ misses in `docs/case_studies_dev.md`.
   solo or small independent developer **and** its original creator is credited on the film (Five Nights at
   Freddy's yes; A Minecraft Movie no). The frozen C1 list with evidence and exclusions is
   `data/reference/creator_native_c1.csv`; 2026 titles enter the analysis once the 2026 box office table is loaded.
+- *Correction to C4 (2026-10-20, before any H7/H8 or class-residual computation):* the keyword part of C4
+  matched films *about* religion (e.g. The Book of Eli, Legion) rather than films made for faith audiences. C4 is
+  now: faith distributor (H6 list) **or** an exact TMDB keyword "christian film", "christian faith" or "faith-based".
