@@ -131,3 +131,7 @@ misses in `docs/case_studies_dev.md`.
   been examined before this amendment.
 - **Breakout model (descriptive, not a hypothesis test):** probability that a film opens at ≥ 2× its traditional
   T-7 forecast; rolling backtest; reported with Brier score, ROC-AUC vs. the base rate, and a calibration table.
+- *Clarifications (2026-10-20, before any H7/H8 computation):* a game IP is C1 only if it was self-published by a
+  solo or small independent developer **and** its original creator is credited on the film (Five Nights at
+  Freddy's yes; A Minecraft Movie no). The frozen C1 list with evidence and exclusions is
+  `data/reference/creator_native_c1.csv`; 2026 titles enter the analysis once the 2026 box office table is loaded.
