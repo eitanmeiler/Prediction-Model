@@ -1,16 +1,65 @@
 {
  "_note": "Upcoming wide releases to forecast. Distributors use Box Office Mojo's names. Fill open_theaters when the count is announced (usually the Wednesday before opening) to unlock the T-7 forecast. Dates/distributors from Wikipedia 'List of American films of 2026' (2026-10-12); check before freezing a forecast.",
  "films": [
-  {"title": "Clayface", "release_date": "2026-10-23", "distributor": "Warner Bros."},
-  {"title": "Klara and the Sun", "release_date": "2026-10-23", "distributor": "Sony Pictures Releasing"},
-  {"title": "The Cat in the Hat", "release_date": "2026-11-06", "distributor": "Warner Bros."},
-  {"title": "I Play Rocky", "release_date": "2026-11-06", "distributor": "Amazon MGM Studios"},
-  {"title": "Wild Horse Nine", "release_date": "2026-11-06", "distributor": "Searchlight Pictures"},
-  {"title": "Ghost Soldier", "release_date": "2026-11-11", "distributor": "Sony Pictures Releasing"},
-  {"title": "Ebenezer", "release_date": "2026-11-13", "distributor": "Paramount Pictures"},
-  {"title": "How to Rob a Bank", "release_date": "2026-11-13", "distributor": "Amazon MGM Studios"},
-  {"title": "The Hunger Games: Sunrise on the Reaping", "release_date": "2026-11-20", "distributor": "Lionsgate"},
-  {"title": "Focker-in-Law", "release_date": "2026-11-25", "distributor": "Universal Pictures"},
-  {"title": "Hexed", "release_date": "2026-11-25", "distributor": "Walt Disney Studios Motion Pictures"}
+  {
+   "title": "Clayface",
+   "release_date": "2026-10-23",
+   "distributor": "Warner Bros."
+  },
+  {
+   "title": "Klara and the Sun",
+   "release_date": "2026-10-23",
+   "distributor": "Sony Pictures Releasing"
+  },
+  {
+   "title": "Wildwood",
+   "release_date": "2026-10-23",
+   "distributor": "Fathom Events"
+  },
+  {
+   "title": "The Cat in the Hat",
+   "release_date": "2026-11-06",
+   "distributor": "Warner Bros."
+  },
+  {
+   "title": "I Play Rocky",
+   "release_date": "2026-11-06",
+   "distributor": "Amazon MGM Studios"
+  },
+  {
+   "title": "Wild Horse Nine",
+   "release_date": "2026-11-06",
+   "distributor": "Searchlight Pictures"
+  },
+  {
+   "title": "Ghost Soldier",
+   "release_date": "2026-11-11",
+   "distributor": "Sony Pictures Releasing"
+  },
+  {
+   "title": "Ebenezer",
+   "release_date": "2026-11-13",
+   "distributor": "Paramount Pictures"
+  },
+  {
+   "title": "How to Rob a Bank",
+   "release_date": "2026-11-13",
+   "distributor": "Amazon MGM Studios"
+  },
+  {
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "release_date": "2026-11-20",
+   "distributor": "Lionsgate"
+  },
+  {
+   "title": "Focker-in-Law",
+   "release_date": "2026-11-25",
+   "distributor": "Universal Pictures"
+  },
+  {
+   "title": "Hexed",
+   "release_date": "2026-11-25",
+   "distributor": "Walt Disney Studios Motion Pictures"
+  }
  ]
 }
