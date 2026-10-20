@@ -42,7 +42,13 @@ def cached(key, fetch):
 
 def http_get(url, **kw):
     for attempt in range(30):  # Wikimedia rate-limits per IP; wait it out patiently
-        r = requests.get(url, headers=UA, timeout=60, **kw)
+        try:
+            r = requests.get(url, headers=UA, timeout=60, **kw)
+        except requests.exceptions.RequestException:  # SSL hiccups, dropped connections, timeouts
+            if attempt == 29:
+                raise
+            time.sleep(10 + 5 * min(attempt, 6))
+            continue
         if r.status_code == 429 or r.status_code >= 500:
             time.sleep(max(int(r.headers.get("Retry-After", 0) or 0), 5) + 5 * min(attempt, 6))
             continue
