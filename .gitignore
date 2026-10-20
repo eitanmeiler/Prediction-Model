@@ -10,3 +10,4 @@ data/raw/boxoffice/
 *.key
 keys.env
 data/cache/
+catboost_info/
