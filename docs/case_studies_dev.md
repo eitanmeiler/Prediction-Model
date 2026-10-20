@@ -47,3 +47,15 @@ Spanish-speaking audiences, families — whose enthusiasm doesn't show up in Eng
 A test: add distributor-type flags (faith distributors such as Angel, Affirm, Pure Flix; Spanish-language
 distributors such as Pantelion) and Spanish-Wikipedia pageviews, then check whether these residuals shrink —
 pre-registered as a new hypothesis *before* running it.
+
+## 4. Descriptive H6 check (already-seen 2014-2025 data; not a test)
+Traditional ridge model, T-7 residuals (actual − forecast, log scale):
+
+| Group | Films | Mean residual | ≈ actual ÷ forecast |
+|---|---|---|---|
+| Faith / Spanish-language distributors (H6 list) | 37 | +0.149 (95% CI −0.067 to +0.367) | 1.16× |
+| All other films | 1,239 | −0.114 | 0.89× |
+
+By distributor: Affirm +0.40 (6 films), Pantelion +1.44 (2), Angel +0.05 (17), Pure Flix −0.04 (11),
+Pure Flix / Quality Flix −0.20 (1). **Weak and uneven** — the gap comes mostly from Affirm and Pantelion; Angel
+and Pure Flix films land near forecast. The confirmatory 2026 test may be underpowered (it needs ≥ 8 flagged films).
