@@ -83,7 +83,7 @@ def interval(checkpoint, model="ridge"):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--freeze", action="store_true")
-    ap.add_argument("--train-through", type=int, default=2024)
+    ap.add_argument("--train-through", type=int, default=2025)  # 2025 unsealed by the confirmatory run (2026-10-19)
     args = ap.parse_args()
 
     df = pd.read_csv(TABLE, parse_dates=["release_date"])

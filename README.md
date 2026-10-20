@@ -7,19 +7,21 @@ openings after 2020, and whether pre-release audience attention explains the hit
 Every hypothesis was written down before modeling ([HYPOTHESES.md](HYPOTHESES.md), with dated amendments), 2025 is
 a sealed holdout, and live forecasts are frozen in git before release so they can't be quietly changed.
 
-## Status (2026-10-19) — development results, 2025 still sealed
+## Results — confirmatory (sealed 2025 data, spec frozen in commit e21bcc8)
 
-| Question | Finding so far |
+| Question | Confirmatory finding |
 |---|---|
-| Can openings be forecast a week out? | Typical miss **~34–39%** vs **~65%** for a comps baseline; 80% ranges cover ~78% of actuals |
-| Ridge vs. CatBoost? | Tied on traditional features (no significant difference) |
-| H1 — star power fell after 2020? | **Not supported.** Star track records barely predicted openings *before* 2020 either |
-| H2 — openings got less predictable? | Only because of 2022 (reopening year); **not supported** once 2022 is excluded |
-| H3 — does pre-release attention help? | **Yes (CatBoost):** error ↓ ~7%, and the gain is **larger after 2020** (H3b) |
-| H4 — existing fanbase (source-work attention)? | Borderline positive |
-| H5 — accelerating buzz? | Positive; narrowly misses the multiple-testing threshold |
+| Forecast accuracy (2025 holdout, 1 week out) | Typical miss **32%** (CatBoost) – **36%** (ridge) vs **73%** comps baseline; 80% ranges cover 76–81% |
+| H1 — star power fell after 2020? | **Not supported** — stars barely predicted openings before 2020 either; no decline |
+| H2 — openings less predictable? | Errors are higher after 2020 (CatBoost p = 0.004) but it **fails the multiple-testing correction** |
+| H3 — pre-release attention helps? | **Yes for CatBoost** (p < 0.001), **no for ridge** → not supported under the conservative rule |
+| H4 — existing fanbase (source attention)? | Borderline (p = 0.024), fails correction |
+| **H5 — accelerating buzz beats the forecast?** | **Supported** (p = 0.001, survives Holm) |
 
-Full numbers: [docs/backtest_summary.md](docs/backtest_summary.md), [docs/hypothesis_results_dev.md](docs/hypothesis_results_dev.md),
+Exploratory lead, pre-registered as **H6** and to be tested on 2026 releases only: faith and Spanish-language
+audiences are under-forecast and invisible to English-Wikipedia attention ([docs/case_studies_dev.md](docs/case_studies_dev.md)).
+
+Full numbers: [docs/confirmatory_results.md](docs/confirmatory_results.md), [docs/backtest_summary.md](docs/backtest_summary.md), [docs/hypothesis_results_dev.md](docs/hypothesis_results_dev.md),
 [docs/attention_results_dev.md](docs/attention_results_dev.md), headline chart
 [docs/figures/drivers_over_time.png](docs/figures/drivers_over_time.png), case-study list [docs/biggest_misses.md](docs/biggest_misses.md).
 Caveat: attention may partly reflect marketing spend, which is not observable ([LIMITATIONS.md](LIMITATIONS.md)).

@@ -123,7 +123,11 @@ else:
                "partly based on the other drivers.")
     with st.expander("Same chart once the opening theater count is known"):
         st.image(str(ROOT / "docs" / "figures" / "drivers_over_time_with_theaters.png"), width="stretch")
-    for f in ("docs/hypothesis_results_dev.md", "docs/attention_results_dev.md"):
+    conf = ROOT / "docs" / "confirmatory_results.md"
+    if conf.exists():
+        st.subheader("Confirmatory results (sealed 2025 data, frozen spec)")
+        st.markdown(conf.read_text().split("\n", 2)[2])
+    for f in ("docs/case_studies_dev.md", "docs/hypothesis_results_dev.md", "docs/attention_results_dev.md"):
         p = ROOT / f
         if p.exists():
             with st.expander(p.stem.replace("_", " ").capitalize()):
