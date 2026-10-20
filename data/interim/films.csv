@@ -1958,3 +1958,146 @@ film_id,year,title,distributor,domestic_total,max_theaters,opening,open_theaters
 20251219_the_spongebob_movie_search_for_squarepan,2025,The SpongeBob Movie: Search for SquarePants,Paramount Pictures,71068170,3570,15611344.0,3557.0,2025-12-19,False,False,False
 20251225_anaconda,2025,Anaconda,Sony Pictures Releasing,65098148,3509,14502218.0,3509.0,2025-12-25,False,False,False
 20251225_song_sung_blue,2025,Song Sung Blue,Focus Features,39185290,2705,7073630.0,2587.0,2025-12-25,False,False,False
+20260102_we_bury_the_dead,2026,We Bury the Dead,Vertical Entertainment,3711918,1172,2502075.0,1172.0,2026-01-02,False,False,False
+20260109_greenland_2_migration,2026,Greenland 2: Migration,Lionsgate,17770308,2718,8401148.0,2710.0,2026-01-09,False,False,False
+20260109_i_was_a_stranger,2026,I Was a Stranger,Angel,2008686,1400,1199400.0,1400.0,2026-01-09,False,False,False
+20260109_primate,2026,Primate,Paramount Pictures,25635665,2964,11155908.0,2964.0,2026-01-09,False,False,False
+20260116_28_years_later_the_bone_temple,2026,28 Years Later: The Bone Temple,Sony Pictures Releasing,25147583,3506,12521327.0,3506.0,2026-01-16,False,False,False
+20260116_charlie_the_wonderdog,2026,Charlie the Wonderdog,Viva Pictures,2003436,1230,781550.0,1230.0,2026-01-16,False,False,False
+20260116_night_patrol,2026,Night Patrol,IFC Films,372115,800,249634.0,800.0,2026-01-16,False,False,False
+20260123_mercy,2026,Mercy,Amazon MGM Studios,24390303,3468,10809178.0,3468.0,2026-01-23,False,False,False
+20260123_return_to_silent_hill,2026,Return to Silent Hill,Cineverse,5544971,2000,3252000.0,2000.0,2026-01-23,False,False,False
+20260130_iron_lung,2026,Iron Lung,Markiplier,40851941,3015,17800000.0,3015.0,2026-01-30,True,False,False
+20260130_melania,2026,Melania,Amazon MGM Studios,16357453,2003,7161605.0,1778.0,2026-01-30,False,False,False
+20260130_send_help,2026,Send Help,Walt Disney Studios Motion Pictures,64734795,3475,19102299.0,3475.0,2026-01-30,False,False,False
+20260130_shelter,2026,Shelter,Black Bear,12805541,2726,5531028.0,2726.0,2026-01-30,False,False,False
+20260206_dracula,2026,Dracula,Vertical Entertainment,13053400,2050,4400264.0,2050.0,2026-02-06,False,False,False
+20260206_solo_mio,2026,Solo Mio,Angel,25736278,3052,7001169.0,3052.0,2026-02-06,False,False,False
+20260206_stray_kids_the_dominate_experience,2026,Stray Kids: The Dominate Experience,Bleecker Street Media,7232818,1724,5710133.0,1724.0,2026-02-06,False,False,False
+20260206_the_strangers_chapter_3,2026,The Strangers: Chapter 3,Lionsgate,8560986,2565,3472554.0,2565.0,2026-02-06,False,False,False
+20260206_whistle,2026,Whistle,IFC Films,1250972,1200,705080.0,1200.0,2026-02-06,False,False,False
+20260213_cold_storage,2026,Cold Storage,The Samuel Goldwyn Company,1529234,1041,936170.0,1041.0,2026-02-13,False,False,False
+20260213_crime_101,2026,Crime 101,Amazon MGM Studios,36588336,3161,14251834.0,3161.0,2026-02-13,False,False,False
+20260213_goat,2026,GOAT,Sony Pictures Releasing,103316898,3863,27202138.0,3863.0,2026-02-13,False,False,False
+20260213_good_luck_have_fun_don_t_die,2026,"Good Luck, Have Fun, Don't Die",Briarcliff Entertainment,8431443,1672,3644275.0,1610.0,2026-02-13,False,False,False
+20260213_wuthering_heights,2026,Wuthering Heights,Warner Bros.,84001072,3682,32801647.0,3682.0,2026-02-13,False,False,False
+20260220_how_to_make_a_killing,2026,How to Make a Killing,A24,7851600,1726,3488298.0,1625.0,2026-02-20,False,False,False
+20260220_i_can_only_imagine_2,2026,I Can Only Imagine 2,Lionsgate,18588615,3105,7750583.0,3105.0,2026-02-20,False,False,False
+20260220_midwinter_break,2026,Midwinter Break,Focus Features,1002905,808,506765.0,808.0,2026-02-20,False,False,False
+20260220_psycho_killer,2026,Psycho Killer,20th Century Studios,2555070,1100,1613435.0,1100.0,2026-02-20,False,False,False
+20260226_twenty_one_pilots_more_than_we_ever_imag,2026,Twenty One Pilots: More Than We Ever Imagined,Trafalgar Releasing,4300000,833,4300000.0,833.0,2026-02-26,True,False,True
+20260227_scream_7,2026,Scream 7,Paramount Pictures,121935967,3540,63615172.0,3540.0,2026-02-27,False,False,False
+20260306_dolly,2026,Dolly,IFC Films,725979,810,473909.0,810.0,2026-03-06,False,False,False
+20260306_hoppers,2026,Hoppers,Walt Disney Studios Motion Pictures,166010783,4000,45349801.0,4000.0,2026-03-06,False,False,False
+20260306_protector,2026,Protector,Magenta Light Studios,1290170,1007,723940.0,1007.0,2026-03-06,False,False,False
+20260306_the_bride,2026,The Bride!,IMAX,12744025,3304,7051476.0,3304.0,2026-03-06,False,False,False
+20260313_reminders_of_him,2026,Reminders of Him,Universal Pictures,48559430,3441,17979940.0,3402.0,2026-03-13,False,False,False
+20260313_undertone,2026,Undertone,A24,20001151,2570,9069849.0,2570.0,2026-03-13,False,False,False
+20260319_dhurandhar_the_revenge,2026,Dhurandhar: The Revenge,Moviegoers Entertainment,28100759,987,10037581.0,987.0,2026-03-19,False,False,False
+20260320_project_hail_mary,2026,Project Hail Mary,Amazon MGM Studios,344050007,4077,80506007.0,4007.0,2026-03-20,False,False,False
+20260320_ready_or_not_2_here_i_come,2026,Ready or Not 2: Here I Come,Searchlight Pictures,22986054,3010,9075271.0,3010.0,2026-03-20,False,False,False
+20260320_the_pout_pout_fish,2026,The Pout-Pout Fish,Viva Pictures,2925502,1854,1325363.0,1854.0,2026-03-20,False,False,False
+20260327_forbidden_fruits,2026,Forbidden Fruits,IFC Films,2322616,1525,1171861.0,1525.0,2026-03-27,False,False,False
+20260327_they_will_kill_you,2026,They Will Kill You,Warner Bros.,10882152,2778,4970938.0,2778.0,2026-03-27,False,False,False
+20260401_the_super_mario_galaxy_movie,2026,The Super Mario Galaxy Movie,Universal Pictures,429814610,4284,131703340.0,4252.0,2026-04-01,False,False,False
+20260403_a_great_awakening,2026,A Great Awakening,Roadside Attractions,8149028,1289,2041328.0,1289.0,2026-04-03,False,False,False
+20260403_the_drama,2026,The Drama,A24,48102144,3151,14380197.0,3087.0,2026-04-03,False,False,False
+20260410_beast,2026,Beast,Lionsgate,1290388,1160,805993.0,1160.0,2026-04-10,False,False,False
+20260410_faces_of_death,2026,Faces of Death,IFC Films,2609598,1600,1647717.0,1600.0,2026-04-10,False,False,False
+20260410_you_me_tuscany,2026,"You, Me & Tuscany",Universal Pictures,18723685,3157,7753150.0,3151.0,2026-04-10,False,False,False
+20260411_bts_world_tour_arirang_in_goyang_live_vi,2026,BTS World Tour 'Arirang' in Goyang: Live Viewing,Trafalgar Releasing,2440000,1189,2440000.0,1189.0,2026-04-11,True,False,True
+20260417_busboys,2026,Busboys,Busboys Holdings,2607503,800,1650000.0,800.0,2026-04-17,True,False,False
+20260417_lee_cronin_s_the_mummy,2026,Lee Cronin's The Mummy,Warner Bros.,29152113,3304,13517172.0,3304.0,2026-04-17,False,False,False
+20260417_normal,2026,Normal,Magnolia Pictures,5071290,2153,2550311.0,2060.0,2026-04-17,False,False,False
+20260418_bts_world_tour_arirang_in_japan_live_vie,2026,BTS World Tour 'Arirang' in Japan: Live Viewing,Trafalgar Releasing,1800000,1189,1800000.0,1189.0,2026-04-18,True,False,True
+20260424_desert_warrior,2026,Desert Warrior,Vertical Entertainment,704280,1010,487848.0,1010.0,2026-04-24,False,False,False
+20260424_fuze,2026,Fuze,Roadside Attractions,1486030,1164,1004330.0,1164.0,2026-04-24,False,False,False
+20260424_michael,2026,Michael,Lionsgate,372303388,3955,97206874.0,3955.0,2026-04-24,False,False,False
+20260424_over_your_dead_body,2026,Over Your Dead Body,IFC Films,2154696,1550,1393356.0,1550.0,2026-04-24,False,False,False
+20260501_animal_farm,2026,Animal Farm,Angel,5588982,2600,3301363.0,2600.0,2026-05-01,False,False,False
+20260501_deep_water,2026,Deep Water,Magenta Light Studios,4346226,1675,2103911.0,1675.0,2026-05-01,False,False,False
+20260501_hokum,2026,Hokum,Neon,17000014,1900,6428305.0,1885.0,2026-05-01,False,False,False
+20260501_that_time_i_got_reincarnated_as_a_slime_,2026,That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea,Sony Pictures Releasing,1423753,837,947325.0,837.0,2026-05-01,False,False,False
+20260501_the_devil_wears_prada_2,2026,The Devil Wears Prada 2,Walt Disney Studios Motion Pictures,220556651,4200,76747075.0,4150.0,2026-05-01,False,False,False
+20260508_billie_eilish_hit_me_hard_and_soft,2026,Billie Eilish: Hit Me Hard and Soft,Paramount Pictures,9901485,2613,7011311.0,2613.0,2026-05-08,False,False,False
+20260508_mortal_kombat_ii,2026,Mortal Kombat II,Warner Bros.,79770110,3534,38501177.0,3503.0,2026-05-08,False,False,False
+20260508_the_sheep_detectives,2026,The Sheep Detectives,Amazon MGM Studios,66078506,3554,15087796.0,3457.0,2026-05-08,False,False,False
+20260515_in_the_grey,2026,In the Grey,Black Bear,5723890,2018,2926879.0,2018.0,2026-05-15,False,False,False
+20260515_is_god_is,2026,Is God Is,Amazon MGM Studios,4945741,1510,2215153.0,1510.0,2026-05-15,False,False,False
+20260515_mobile_suit_gundam_hathaway_the_sorcery_,2026,Mobile Suit Gundam Hathaway: The Sorcery of Nymph Circe,Bandai,1165491,894,820038.0,894.0,2026-05-15,False,False,False
+20260515_obsession,2026,Obsession,Focus Features,263451715,3068,17196855.0,2615.0,2026-05-15,False,False,False
+20260522_i_love_boosters,2026,I Love Boosters,Neon,9743067,1750,3783187.0,1750.0,2026-05-22,False,False,False
+20260522_passenger,2026,Passenger,Paramount Pictures,18041122,2534,8746797.0,2534.0,2026-05-22,False,False,False
+20260522_star_wars_the_mandalorian_and_grogu,2026,Star Wars: The Mandalorian and Grogu,Walt Disney Studios Motion Pictures,177730060,4300,81670433.0,4300.0,2026-05-22,False,False,False
+20260529_backrooms,2026,Backrooms,A24,197523513,3565,81402424.0,3442.0,2026-05-29,False,False,False
+20260529_pressure,2026,Pressure,Focus Features,15569855,1855,5811480.0,1829.0,2026-05-29,False,False,False
+20260529_the_breadwinner,2026,The Breadwinner,Sony Pictures Releasing,20247080,3252,7353073.0,3252.0,2026-05-29,False,False,False
+20260604_the_amazing_digital_circus_the_last_act,2026,The Amazing Digital Circus: The Last Act,,23421793,2221,12392184.0,2221.0,2026-06-04,False,False,False
+20260605_masters_of_the_universe,2026,Masters of the Universe,Amazon MGM Studios,64830245,3677,29439929.0,3677.0,2026-06-05,False,False,False
+20260605_scary_movie,2026,Scary Movie,Paramount Pictures,108277762,3504,54336626.0,3490.0,2026-06-05,False,False,False
+20260612_disclosure_day,2026,Disclosure Day,Universal Pictures,116636645,3824,44530925.0,3824.0,2026-06-12,False,False,False
+20260612_stop_that_train,2026,Stop! That! Train!,Bleecker Street Media,4027857,1161,2024687.0,1161.0,2026-06-12,False,False,False
+20260612_the_furious,2026,The Furious,Lionsgate,6502610,1251,2805717.0,1251.0,2026-06-12,False,False,False
+20260613_bts_world_tour_arirang_in_busan_live_vie,2026,BTS World Tour 'Arirang' in Busan: Live Viewing,Trafalgar Releasing,3800000,1005,3800000.0,1005.0,2026-06-13,True,False,True
+20260619_leviticus,2026,Leviticus,Neon,7215533,1076,2610696.0,1076.0,2026-06-19,False,False,False
+20260619_the_death_of_robin_hood,2026,The Death of Robin Hood,A24,5355164,1762,2867662.0,1762.0,2026-06-19,False,False,False
+20260619_toy_story_5,2026,Toy Story 5,Walt Disney Studios Motion Pictures,480294461,4425,159677837.0,4425.0,2026-06-19,False,False,False
+20260626_bleach_thousand_year_blood_war_the_calam,2026,BLEACH: Thousand-Year Blood War - The Calamity,,4272307,943,2163790.0,943.0,2026-06-26,False,False,False
+20260626_jackass_best_and_last,2026,Jackass: Best and Last,Paramount Pictures,18273185,2855,8464977.0,2855.0,2026-06-26,False,False,False
+20260626_supergirl,2026,Supergirl,Warner Bros.,72366532,3602,37102018.0,3602.0,2026-06-26,False,False,False
+20260701_minions_monsters,2026,Minions & Monsters,Universal Pictures,183171260,4244,37003505.0,4243.0,2026-07-01,False,False,False
+20260703_young_washington,2026,Young Washington,Angel,47075084,2771,19372216.0,2725.0,2026-07-03,False,False,False
+20260710_evil_dead_burn,2026,Evil Dead Burn,Warner Bros.,32237058,3004,13701012.0,3004.0,2026-07-10,False,False,False
+20260710_gail_daughtry_and_the_celebrity_sex_pass,2026,Gail Daughtry and the Celebrity Sex Pass,Sony Pictures Classics,1444318,1000,898962.0,1000.0,2026-07-10,False,False,False
+20260710_moana,2026,Moana,Walt Disney Studios Motion Pictures,126229663,4200,43142824.0,3875.0,2026-07-10,False,False,False
+20260717_the_odyssey,2026,The Odyssey,Universal Pictures,624908045,3942,123502900.0,3919.0,2026-07-17,False,False,False
+20260724_hadestown_the_musical,2026,Hadestown: The Musical,Bleecker Street Media,20728068,1949,10261123.0,1949.0,2026-07-24,False,False,False
+20260724_motor_city,2026,Motor City,IFC Films,2713586,1600,1693905.0,1600.0,2026-07-24,False,False,False
+20260731_spider_man_brand_new_day,2026,Spider-Man: Brand New Day,Sony Pictures Releasing,958264412,4539,360091572.0,4487.0,2026-07-31,False,False,False
+20260807_ice_cream_man,2026,Ice Cream Man,Iconic Events Releasing,3174200,1671,1987000.0,1671.0,2026-08-07,False,False,True
+20260807_one_night_only,2026,One Night Only,Universal Pictures,11506280,3012,5508045.0,3012.0,2026-08-07,False,False,False
+20260807_super_troopers_3,2026,Super Troopers 3,Searchlight Pictures,7435972,2760,4002283.0,2760.0,2026-08-07,False,False,False
+20260814_nimrods,2026,Nimrods,Falling Forward Films,1200400,1012,910110.0,1012.0,2026-08-14,False,False,False
+20260814_paw_patrol_the_dino_movie,2026,PAW Patrol: The Dino Movie,Paramount Pictures,53194307,3609,20254688.0,3545.0,2026-08-14,False,False,False
+20260814_six_the_musical_live,2026,Six: The Musical Live!,Focus Features,4683000,1462,3002305.0,1462.0,2026-08-14,False,False,True
+20260814_the_brink_of_war,2026,The Brink of War,Angel,5052290,2083,2689529.0,2083.0,2026-08-14,False,False,False
+20260814_the_end_of_oak_street,2026,The End of Oak Street,Warner Bros.,54226243,3478,21010488.0,3446.0,2026-08-14,False,False,False
+20260821_insidious_out_of_the_further,2026,Insidious: Out of the Further,Sony Pictures Releasing,66092129,3303,25106020.0,3303.0,2026-08-21,False,False,False
+20260821_mutiny,2026,Mutiny,Lionsgate,15835475,2703,7709519.0,2703.0,2026-08-21,False,False,False
+20260821_spa_weekend,2026,Spa Weekend,Black Bear,7016616,2009,3075694.0,2009.0,2026-08-21,False,False,False
+20260821_the_magic_faraway_tree,2026,The Magic Faraway Tree,Vertical Entertainment,2391837,1611,1345146.0,1611.0,2026-08-21,False,False,False
+20260828_buddy,2026,Buddy,Roadside Attractions,26967964,1771,5464870.0,1277.0,2026-08-28,False,False,False
+20260828_coyote_vs_acme,2026,Coyote vs. Acme,Ketchup Entertainment,60101763,3727,15914007.0,3575.0,2026-08-28,False,False,False
+20260828_idiots,2026,Idiots,IFC Films,1082011,1110,707759.0,1110.0,2026-08-28,False,False,False
+20260828_the_dog_stars,2026,The Dog Stars,Walt Disney Studios Motion Pictures,14961776,3330,7709729.0,3330.0,2026-08-28,False,False,False
+20260902_fall_2_deadpoint,2026,Fall 2: Deadpoint,Lionsgate,5044421,1704,2320061.0,1704.0,2026-09-02,False,False,False
+20260904_by_any_means,2026,By Any Means,Paramount Pictures,15763404,2903,7522948.0,2903.0,2026-09-04,False,False,False
+20260904_onslaught,2026,Onslaught,A24,3286271,1918,1914775.0,1918.0,2026-09-04,False,False,False
+20260904_tom_and_jerry_forbidden_compass,2026,Tom and Jerry: Forbidden Compass,Viva Pictures,370545,850,265104.0,850.0,2026-09-04,False,False,False
+20260909_hope,2026,Hope,Neon,8137518,1560,3228335.0,1560.0,2026-09-09,False,False,False
+20260911_don_t_look_back_in_anger,2026,Don't Look Back in Anger,Walt Disney Studios Motion Pictures,1961044,1225,1380015.0,1225.0,2026-09-11,False,False,False
+20260911_mystery_science_theater_3000_the_rifftra,2026,Mystery Science Theater 3000: The RiffTrax Experiments: Sting of Death,,393002,964,393002.0,964.0,2026-09-11,False,False,False
+20260911_practical_magic_2,2026,Practical Magic 2,Warner Bros.,68247312,4163,30002526.0,4146.0,2026-09-11,False,False,False
+20260911_runner,2026,Runner,Angel,14455523,2568,6462291.0,2568.0,2026-09-11,False,False,False
+20260911_the_fix,2026,The Fix,Briarcliff Entertainment,1184543,1205,726161.0,1205.0,2026-09-11,False,False,False
+20260911_the_uprising,2026,The Uprising,Focus Features,6513180,2069,3311085.0,2068.0,2026-09-11,False,False,False
+20260918_daniel_and_the_fiery_furnace,2026,Daniel and the Fiery Furnace,EKKL Entertainment,8295181,1525,3303548.0,1525.0,2026-09-18,False,False,False
+20260918_resident_evil,2026,Resident Evil,Columbia Pictures,148459411,3684,60152878.0,3684.0,2026-09-18,False,False,False
+20260918_shaun_the_sheep_the_beast_of_mossy_botto,2026,Shaun the Sheep: The Beast of Mossy Bottom,GKIDS,3169645,2183,1841234.0,2183.0,2026-09-18,False,False,False
+20260918_the_weight,2026,The Weight,Vertical Entertainment,2301059,1504,2301059.0,1504.0,2026-09-18,False,False,False
+20260925_forgotten_island,2026,Forgotten Island,DreamWorks,35206990,3555,13007005.0,3548.0,2026-09-25,False,False,False
+20260925_heart_of_the_beast,2026,Heart of the Beast,Paramount Pictures,58228952,3481,20042473.0,3435.0,2026-09-25,False,False,False
+20260925_primetime,2026,Primetime,A24,45337119,2894,18830798.0,2874.0,2026-09-25,False,False,False
+20261002_beware_boi_na,2026,Beware Boiúna,Lionsgate,816264,1121,550546.0,1121.0,2026-10-02,False,False,False
+20261002_digger,2026,Digger,Warner Bros.,17222732,3321,8001856.0,3321.0,2026-10-02,False,False,False
+20261002_rolling_loud,2026,Rolling Loud,Ketchup Entertainment,684025,930,474003.0,930.0,2026-10-02,False,False,False
+20261002_the_influencer_project,2026,The Influencer Project,Variance Films,476763,956,359805.0,956.0,2026-10-02,False,False,False
+20261002_verity,2026,Verity,Amazon MGM Studios,65927001,3572,32031011.0,3510.0,2026-10-02,False,False,False
+20261009_angel_and_the_badman,2026,Angel and the Badman,Angel,3584015,2263,2115116.0,2263.0,2026-10-09,False,False,False
+20261009_other_mommy,2026,Other Mommy,Universal Pictures,44709120,3370,27805825.0,3365.0,2026-10-09,False,False,False
+20261009_the_social_reckoning,2026,The Social Reckoning,Sony Pictures Releasing,8135370,2606,5018263.0,2606.0,2026-10-09,False,False,False
+20261016_crawlers,2026,Crawlers,Roadside Attractions,462691,1040,462691.0,1040.0,2026-10-16,False,False,False
+20261016_sense_and_sensibility,2026,Sense and Sensibility,Focus Features,7203465,2545,7203465.0,2545.0,2026-10-16,False,False,False
+20261016_street_fighter,2026,Street Fighter,Paramount Pictures,30775377,3575,30775377.0,3575.0,2026-10-16,False,False,False
+20261016_whalefall,2026,Whalefall,20th Century Studios,7837153,3065,7837153.0,3065.0,2026-10-16,False,False,False
+20261016_you_can_see_everything,2026,You Can See Everything,A24,15601418,855,15601418.0,855.0,2026-10-16,False,False,False

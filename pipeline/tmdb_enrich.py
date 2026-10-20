@@ -49,6 +49,7 @@ ALT_TITLES = {
     "The Brothers Grimsby": ("Grimsby", 2016),
     "X-Men: Dark Phoenix": ("Dark Phoenix", 2019),
     "The Expendables 4": ("Expend4bles", 2023),
+    "Star Wars: The Mandalorian and Grogu": ("The Mandalorian and Grogu", 2026),
     "Pushpa: The Rule - Part 2": ("Pushpa 2: The Rule", 2024),
     "Atlas Shrugged II: The Strike": ("Atlas Shrugged: Part II", 2012),
     "The Christmas Ring": ("Karen Kingsbury's The Christmas Ring", 2025),
@@ -63,6 +64,7 @@ FORCE_ID = {
     "20121102_flight": 87502, "20220114_belle": 776305, "20240112_soul": 508442, "20200918_infidel": 649401,
     "20230421_the_covenant": 882569, "20170224_collide": 195590, "20220218_the_cursed": 630392,
     "20241122_bonhoeffer": 1079244,
+    "20260206_dracula": 1246049,  # Luc Besson; French release 2025, US (Vertical) Feb 6 2026
     "20151204_the_letters": 218275, "20170127_gold": 334524, "20240315_one_life": 760774,
     "20240524_sight": 1057006, "20150417_unfriended": 277685,  # same-title foreign films ranked first
     "20120120_haywire": 70435, "20181124_pok_mon_the_movie_the_power_of_us": 494407,  # correct, TMDB has no US date
