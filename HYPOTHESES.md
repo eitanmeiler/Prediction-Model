@@ -138,3 +138,18 @@ misses in `docs/case_studies_dev.md`.
 - *Correction to C4 (2026-10-20, before any H7/H8 or class-residual computation):* the keyword part of C4
   matched films *about* religion (e.g. The Book of Eli, Legion) rather than films made for faith audiences. C4 is
   now: faith distributor (H6 list) **or** an exact TMDB keyword "christian film", "christian faith" or "faith-based".
+
+## Amendment 6 (2026-10-20) — after the breakout chapter's first results, before any post-release data was pulled
+
+First results (`docs/breakout_results.md`): H8 not supported (pre-release signals don't predict legs); the
+breakout classifier ranks above chance (AUC 0.68) but is not calibrated; creator-native **horror** films all opened
+above forecast while non-horror creator films flopped (exploratory, n = 8).
+
+- **H9 (word of mouth can be caught early):** post-release attention momentum — log(mean daily Wikipedia views,
+  days +3..+9 after release) minus log(mean views, days T-7..T-1 before release) — improves the legs model
+  (log total ÷ opening) beyond the opening weekend and traditional features. Test: rolling quarterly backtest
+  2017-2025 (2016+ training), paired bootstrap MAE gain, ridge and CatBoost both reported, conservative p = the
+  larger, α = 0.05. Use case: a "nowcast" of the final total nine days after release.
+- **H7b (creator-native horror):** C1 films that are horror (TMDB genre) open above the traditional T-7 forecast.
+  Exploratory on everything released before 2026-10-20 (it was suggested by those films). Confirmatory only on
+  C1 horror releases after 2026-10-20 (≥ 5 needed; otherwise reported as insufficient data).
