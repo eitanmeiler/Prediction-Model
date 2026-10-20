@@ -73,3 +73,8 @@ issues come up.
   tracker shares the same limit.
 - **[accepted] Ridge and CatBoost tie** in the backtest (no significant difference), so ridge — the simpler model —
   is the primary forecaster, as planned.
+- **[checked] Average over-forecast.** Models over-forecast 2019 and especially 2022 (median log error −0.2 to −0.6),
+  but bias is ~0 in 2024–2025. A walk-forward bias correction helped historically but not on 2025 or for the
+  attention model, so none is applied.
+- **[accepted] Primary model was not the best on the 2025 holdout at T-7** (CatBoost 32% vs CatBoost + attention
+  35%); kept as frozen to avoid choosing after seeing results. Both are reported live; 2026 decides.
