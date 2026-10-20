@@ -37,6 +37,11 @@ def fetch_views(article: str, start: datetime.date, end: datetime.date):
                 time.sleep(BACKOFF * (attempt + 1))
                 continue
             return e
+        except (urllib.error.URLError, OSError) as e:  # DNS/network down (e.g. just after wake), timeouts
+            if attempt < MAX_RETRIES:
+                time.sleep(30 * (attempt + 1))
+                continue
+            return e
         except Exception:
             if attempt < MAX_RETRIES:
                 time.sleep(BACKOFF)
