@@ -1,0 +1,239 @@
+<title>Opening Night</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column (paper) with wide inset panels for tables and the chart; marquee-style condensed headings */
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#1a2130; --ink2:#566073; --rule:#dde1e8;
+  --accent:#b4451f;          /* marquee bulb red, used sparingly */
+  --line:#2a63b8;            /* chart series */
+  --band:rgba(42,99,184,.14);
+  --ok:#1f7a4a; --no:#8a8f99; --warn:#9a6a00;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12151b; --panel:#191d25; --ink:#e7eaf0; --ink2:#a3abb9; --rule:#2b313c;
+  --accent:#ff7a4d; --line:#6aa3f0; --band:rgba(106,163,240,.18);
+  --ok:#4fc185; --no:#7d8593; --warn:#e0a83a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12151b; --panel:#191d25; --ink:#e7eaf0; --ink2:#a3abb9; --rule:#2b313c;
+  --accent:#ff7a4d; --line:#6aa3f0; --band:rgba(106,163,240,.18);
+  --ok:#4fc185; --no:#7d8593; --warn:#e0a83a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:980px;margin:0 auto}
+.col{max-width:68ch}
+header{padding-block:48px 28px;border-bottom:1px solid var(--rule)}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font:800 clamp(52px,9vw,96px)/.9 var(--display);letter-spacing:.01em;margin:.25em 0 .15em;text-transform:uppercase}
+.dek{font-size:21px;line-height:1.45;color:var(--ink2);max-width:52ch;text-wrap:balance;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:20px;font:400 13px/1.4 var(--mono);color:var(--ink2)}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border:1px solid var(--rule);border-radius:999px;background:var(--panel)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+section{padding-block:40px 8px}
+h2{font:800 32px/1 var(--display);text-transform:uppercase;letter-spacing:.02em;margin:0 0 14px;text-wrap:balance}
+h3{font:600 19px/1.3 var(--body);margin:26px 0 8px}
+p{margin:0 0 14px}
+.panel{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:18px 20px;margin:18px 0}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font:500 11px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.verdict{display:inline-block;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:4px;white-space:nowrap;border:1px solid currentColor}
+.v-yes{color:var(--ok)} .v-no{color:var(--no)} .v-mixed{color:var(--warn)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:18px 0}
+.stat{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:14px 16px}
+.stat b{display:block;font:800 40px/1 var(--display);letter-spacing:.01em}
+.stat span{font:400 13px/1.4 var(--mono);color:var(--ink2)}
+.stat.lead b{color:var(--accent)}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.chart h4{font:600 14px/1.3 var(--body);margin:0 0 4px}
+.chart svg{width:100%;height:auto;display:block}
+.note{font:400 13px/1.5 var(--mono);color:var(--ink2)}
+.x{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.up{color:var(--ok)} .down{color:var(--accent)}
+.empty{border:1px dashed var(--rule);border-radius:6px;padding:16px 18px;color:var(--ink2);margin:14px 0}
+footer{border-top:1px solid var(--rule);margin-top:40px;padding-top:18px}
+a{color:var(--line)}
+:focus-visible{outline:2px solid var(--line);outline-offset:2px}
+@media (max-width:560px){body{font-size:16px}.dek{font-size:18px}h2{font-size:27px}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="kicker">Research project · forecasting box office</div>
+  <h1>Opening Night</h1>
+  <p class="dek">What predicts a movie's opening weekend now, and do stars still matter? A pre-registered model of 1,959 US wide releases, tested on films it had never seen and graded live this season.</p>
+  <div class="meta">
+    <span class="pill"><span class="dot"></span>Live season: Oct–Dec 2026</span>
+    <span>Confirmatory run: Oct 19, 2026</span>
+    <span>Data 2010–2025 · opened in 800+ theaters</span>
+  </div>
+</header>
+
+<section class="col" id="abstract">
+  <h2>The short version</h2>
+  <p>Box office lore says stars sell tickets and franchises are safe bets. I tested whether that still holds after 2020, and whether audience attention before release explains the hits and flops that the usual factors miss.</p>
+  <p>Every hypothesis was written down before any data was collected. 2025 was sealed away during development and opened exactly once, after the model was frozen in a git commit.</p>
+  <p><strong>Main finding:</strong> star track records barely predicted openings before 2020 and still don't. One signal held up after correcting for multiple tests: films whose Wikipedia attention speeds up in the last two weeks before release beat the traditional forecast.</p>
+</section>
+
+<section id="results">
+  <h2>Results</h2>
+  <div class="stats">
+    <div class="stat lead"><b>32%</b><span>typical miss one week out, 2025 holdout (best model)</span></div>
+    <div class="stat"><b>73%</b><span>typical miss of a "comparable films" baseline</span></div>
+    <div class="stat"><b>81%</b><span>of actual openings fell inside the 80% range</span></div>
+    <div class="stat"><b>1 of 5</b><span>hypotheses survived the multiple-testing correction</span></div>
+  </div>
+
+  <div class="panel scroll">
+    <table>
+      <thead><tr><th>Hypothesis</th><th>What the sealed 2025 run found</th><th class="num">p</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>H1 · Star power matters less after 2020</td><td>No decline. Stars barely predicted openings before 2020 either (about zero once the theater count is known).</td><td class="num">0.94</td><td><span class="verdict v-no">Not supported</span></td></tr>
+        <tr><td>H2 · Openings got harder to predict</td><td>Errors rose after 2020, mostly from 2022 when theaters reopened, but the difference fails the correction.</td><td class="num">0.035</td><td><span class="verdict v-mixed">Not significant</span></td></tr>
+        <tr><td>H3 · Pre-release attention improves forecasts</td><td>Yes for the tree model (CatBoost, p &lt; 0.001), no for the linear model. The pre-registered rule counts the weaker one.</td><td class="num">0.25</td><td><span class="verdict v-mixed">Mixed</span></td></tr>
+        <tr><td>H4 · A bigger existing fanbase beats the forecast</td><td>Positive for adaptations (source-work attention), borderline.</td><td class="num">0.024</td><td><span class="verdict v-no">Not significant</span></td></tr>
+        <tr><td>H5 · Accelerating buzz beats the forecast</td><td>Films whose attention grew fastest in the final two weeks opened above the traditional forecast.</td><td class="num">0.001</td><td><span class="verdict v-yes">Supported</span></td></tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin:12px 0 0">Holm correction across the five tests at α = 0.05. p for H1–H3 is the conservative value fixed in advance (the larger of the two models).</p>
+  </div>
+
+  <h3>How close were the forecasts? (2025 holdout, 148 films)</h3>
+  <div class="panel scroll">
+    <table>
+      <thead><tr><th>Model</th><th class="num">One week out</th><th class="num">Four weeks out</th><th class="num">Inside 80% range</th></tr></thead>
+      <tbody>
+        <tr><td>CatBoost, traditional factors</td><td class="num">32%</td><td class="num">49%</td><td class="num">81%</td></tr>
+        <tr><td>CatBoost + attention (live primary)</td><td class="num">35%</td><td class="num">42%</td><td class="num">76%</td></tr>
+        <tr><td>Ridge regression</td><td class="num">36%</td><td class="num">50%</td><td class="num">80%</td></tr>
+        <tr><td>Comparable-films baseline</td><td class="num">73%</td><td class="num">73%</td><td class="num">85%</td></tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin:12px 0 0">"Typical miss" = median absolute percent error. Attention helps most four weeks out, before theater counts are known. The live primary was chosen on 2017–2024 results and kept after 2025, so the choice isn't made with hindsight.</p>
+  </div>
+</section>
+
+<section id="drivers">
+  <h2>What moves an opening, year by year</h2>
+  <p class="col">Each panel is one factor's association with opening weekend, estimated separately for each year. The band is a 95% confidence interval; 2020–21 is left out.</p>
+  <div class="panel">
+    <div class="charts" id="charts"></div>
+    <p class="note" style="margin:14px 0 0">Effect on log opening weekend, before the theater count is known. Stars sit near zero throughout; the distributor's recent record matters more each year; franchise films keep a large premium. Associations, not causes.</p>
+  </div>
+</section>
+
+<section id="misses">
+  <h2>Where forecasts fail</h2>
+  <p class="col">The interesting part is the misses. "×" is actual opening ÷ forecast, from the backtest (2017–2024, one week out).</p>
+  <div class="panel scroll">
+    <table>
+      <thead><tr><th>Pattern</th><th>Film</th><th class="num">Traditional</th><th class="num">+ attention</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="2">Attention spots flops</td><td>Babylon (2022)</td><td class="num x">0.13×</td><td class="num x up">0.25×</td></tr>
+        <tr><td>Whitney Houston: I Wanna Dance with Somebody (2022)</td><td class="num x">0.15×</td><td class="num x up">0.33×</td></tr>
+        <tr><td rowspan="2">It partly catches cultural events</td><td>Barbie (2023)</td><td class="num x">5.20×</td><td class="num x up">2.85×</td></tr>
+        <tr><td>Conclave (2024)</td><td class="num x">4.69×</td><td class="num x up">2.51×</td></tr>
+        <tr><td rowspan="3">It can't see some audiences</td><td>Sound of Freedom (2023)</td><td class="num x">3.61×</td><td class="num x down">4.02×</td></tr>
+        <tr><td>How to Be a Latin Lover (2017)</td><td class="num x">7.05×</td><td class="num x down">7.54×</td></tr>
+        <tr><td>I Can Only Imagine (2018)</td><td class="num x">3.98×</td><td class="num x">3.40×</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="col">Faith audiences and Spanish-speaking audiences barely register in English Wikipedia traffic, yet they turn out. That became a new hypothesis, H6, written down before testing and to be checked only on 2026 releases.</p>
+</section>
+
+<section id="live">
+  <h2>Live forecasts</h2>
+  <p class="col">Each forecast is committed to git before the film opens, then graded against the real opening. Nothing gets revised after the fact.</p>
+  <div id="tracker"></div>
+  <h3>This season's calendar</h3>
+  <div class="panel scroll">
+    <table>
+      <thead><tr><th>Opens</th><th>Films</th><th>Forecast frozen by</th></tr></thead>
+      <tbody>
+        <tr><td class="x">Oct 23</td><td>Clayface · Klara and the Sun</td><td class="x">Oct 21</td></tr>
+        <tr><td class="x">Nov 6</td><td><strong>The Cat in the Hat</strong> (headline test) · I Play Rocky · Wild Horse Nine (limited release, side case)</td><td class="x">Nov 4</td></tr>
+        <tr><td class="x">Nov 11–13</td><td>Ghost Soldier · Ebenezer · How to Rob a Bank</td><td class="x">Nov 9–11</td></tr>
+        <tr><td class="x">Nov 20</td><td>The Hunger Games: Sunrise on the Reaping</td><td class="x">Nov 18</td></tr>
+        <tr><td class="x">Nov 25</td><td>Focker-in-Law · Hexed</td><td class="x">Nov 23</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="col" id="method">
+  <h2>How it was done</h2>
+  <p><strong>Data.</strong> Opening weekends and theater counts for every film that opened in 800+ theaters, 2010–2025, from Box Office Mojo (copied by hand). Genre, rating, cast, director and franchise from TMDB. Daily Wikipedia page views before release for the film and, for adaptations, its source material.</p>
+  <p><strong>Only what was knowable.</strong> Every input is something a forecaster could have known before release. Track records count only films at least a week older. Production budget was dropped, because databases fill it in after release.</p>
+  <p><strong>Tested like real forecasting.</strong> Each quarter from 2014 to 2025, the models were retrained on earlier films only, then forecast the films opening that quarter. Two checkpoints: four weeks out (T-28) and one week out, once the theater count is announced (T-7).</p>
+  <p><strong>Limits.</strong> Attention may partly reflect marketing spend, which isn't public. Theater counts are set by studios that already expect a certain result. These are associations, not causes, and the post-2020 sample is a few hundred films.</p>
+</section>
+
+<footer class="col note">
+  <p>Data: Box Office Mojo (opening figures), TMDB, Wikipedia/Wikidata. This product uses the TMDB API but is not endorsed or certified by TMDB. Hypotheses, amendments and code live in a version-controlled repository; raw box office tables are not published.</p>
+</footer>
+</div>
+
+<script>
+const DRIVERS = {"z_star":["Star track record",[[2013,-0.097,-0.285,0.091],[2014,0.023,-0.136,0.182],[2015,0.045,-0.128,0.218],[2016,0.056,-0.093,0.205],[2017,0.051,-0.121,0.223],[2018,0.142,-0.03,0.314],[2019,0.173,0.014,0.332],[2022,0.018,-0.371,0.407],[2023,-0.081,-0.299,0.136],[2024,-0.061,-0.272,0.151]]],
+"z_director":["Director track record",[[2013,-0.067,-0.516,0.382],[2014,0.094,-0.149,0.338],[2015,0.345,0.066,0.623],[2016,0.226,0.004,0.448],[2017,0.149,-0.082,0.379],[2018,0.08,-0.196,0.356],[2019,0.314,0.027,0.6],[2022,0.405,-0.092,0.903],[2023,0.386,0.017,0.754],[2024,0.121,-0.201,0.444]]],
+"franchise":["Franchise film",[[2013,0.801,0.137,1.466],[2014,0.682,0.203,1.161],[2015,0.591,-0.01,1.193],[2016,0.644,0.289,0.999],[2017,0.671,0.257,1.086],[2018,0.483,0.095,0.872],[2019,0.796,0.412,1.179],[2022,1.083,0.265,1.901],[2023,0.929,0.498,1.36],[2024,0.831,0.113,1.548]]],
+"z_dist":["Distributor's recent record",[[2013,0.367,0.191,0.544],[2014,0.385,0.212,0.557],[2015,0.439,0.254,0.623],[2016,0.455,0.281,0.63],[2017,0.584,0.392,0.776],[2018,0.621,0.436,0.806],[2019,0.259,0.031,0.487],[2022,0.774,0.398,1.15],[2023,0.737,0.519,0.956],[2024,0.938,0.753,1.124]]]};
+
+(function drawCharts(){
+  const W=260,H=170,L=34,R=8,T=10,B=24,y0=-0.6,y1=2.0;
+  const X=yr=>L+(yr-2013)/(2024-2013)*(W-L-R), Y=v=>T+(y1-v)/(y1-y0)*(H-T-B);
+  const host=document.getElementById("charts");
+  for(const [, [name,rows]] of Object.entries(DRIVERS)){
+    const seg=[rows.filter(r=>r[0]<=2019),rows.filter(r=>r[0]>=2022)];
+    let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${name}, effect by year 2013 to 2024">`;
+    for(const t of [-0.5,0,0.5,1,1.5,2]){s+=`<line x1="${L}" x2="${W-R}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--rule)" stroke-width="${t===0?1.5:1}"/><text x="${L-6}" y="${Y(t)+3.5}" font-size="9" text-anchor="end" fill="var(--ink2)" font-family="IBM Plex Mono,monospace">${t}</text>`}
+    s+=`<rect x="${X(2019.5)}" y="${T}" width="${X(2021.5)-X(2019.5)}" height="${H-T-B}" fill="var(--rule)" opacity=".55"/>`;
+    for(const g of seg){
+      const band=g.map(r=>`${X(r[0])},${Y(r[3])}`).join(" ")+" "+g.slice().reverse().map(r=>`${X(r[0])},${Y(r[2])}`).join(" ");
+      s+=`<polygon points="${band}" fill="var(--band)"/>`;
+      s+=`<polyline points="${g.map(r=>`${X(r[0])},${Y(r[1])}`).join(" ")}" fill="none" stroke="var(--line)" stroke-width="2" stroke-linejoin="round"/>`;
+      for(const r of g){s+=`<circle cx="${X(r[0])}" cy="${Y(r[1])}" r="3.6" fill="var(--line)" stroke="var(--panel)" stroke-width="1.5"><title>${r[0]}: ${r[1].toFixed(2)} (95% CI ${r[2].toFixed(2)} to ${r[3].toFixed(2)})</title></circle>`}
+    }
+    for(const yr of [2013,2016,2019,2022,2024]){s+=`<text x="${X(yr)}" y="${H-7}" font-size="9" text-anchor="middle" fill="var(--ink2)" font-family="IBM Plex Mono,monospace">${yr}</text>`}
+    s+=`</svg>`;
+    host.insertAdjacentHTML("beforeend",`<div class="chart"><h4>${name}</h4>${s}</div>`);
+  }
+})();
+
+const tracker=document.getElementById("tracker");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money=m=>(m==null||m==="")?"—":"$"+Number(m).toFixed(1)+"M";
+function renderEmpty(msg){tracker.innerHTML=`<div class="empty">${msg}</div>`}
+function renderRows(rows){
+  if(!rows.length){renderEmpty("No forecasts frozen yet. The first ones (Clayface and Klara and the Sun) are due Oct 21, two days before they open. Each will appear here with its range, model and git commit, then its actual opening.");return}
+  const graded=rows.filter(r=>r.actual_m!=null);
+  const inRange=graded.filter(r=>r.actual_m>=r.lo80_m&&r.actual_m<=r.hi80_m).length;
+  const misses=graded.map(r=>Math.abs(r.forecast_m/r.actual_m-1)*100).sort((a,b)=>a-b);
+  const med=misses.length?misses[Math.floor((misses.length-1)/2)]:null;
+  let head=graded.length?`<div class="stats"><div class="stat"><b>${graded.length}</b><span>forecasts graded</span></div><div class="stat"><b>${med.toFixed(0)}%</b><span>typical miss</span></div><div class="stat"><b>${inRange}/${graded.length}</b><span>inside the 80% range</span></div></div>`:"";
+  const body=rows.map(r=>{
+    const res=r.actual_m==null?`<span class="note">opens ${esc(r.release_date)}</span>`:
+      `${money(r.actual_m)} <span class="verdict ${r.actual_m>=r.lo80_m&&r.actual_m<=r.hi80_m?"v-yes":"v-no"}">${r.actual_m>=r.lo80_m&&r.actual_m<=r.hi80_m?"in range":"outside"}</span>`;
+    return `<tr><td>${esc(r.title)}</td><td class="num">${esc(r.checkpoint)}</td><td class="num">${money(r.forecast_m)}</td><td class="num">${money(r.lo80_m)} – ${money(r.hi80_m)}</td><td>${res}</td><td class="note">${esc(r.model)}<br>${esc(r.frozen_at_utc)} · ${esc(r.git_commit)}</td></tr>`}).join("");
+  tracker.innerHTML=head+`<div class="panel scroll"><table><thead><tr><th>Film</th><th class="num">Point</th><th class="num">Forecast</th><th class="num">80% range</th><th>Actual</th><th>Model · frozen</th></tr></thead><tbody>${body}</tbody></table></div>`;
+}
+renderEmpty("Loading live forecasts…");
+(async()=>{
+  const db=await (window.claude?.use?.("db") ?? Promise.resolve(null));
+  if(!db){renderEmpty("Live forecasts show here for signed-in viewers. The calendar below lists what's coming and when each forecast is frozen.");return}
+  db.collection("forecasts").orderBy("release_date").onSnapshot(
+    snap=>renderRows(snap.docs.filter(d=>d.exists).map(d=>d.data())),
+    ()=>renderEmpty("Live forecasts couldn't load right now. The calendar below lists what's coming.")
+  );
+})();
+</script>
