@@ -139,7 +139,7 @@ def main():
     elif args.freeze:
         LOG.parent.mkdir(exist_ok=True)
         res.to_csv(LOG, mode="a", header=not LOG.exists(), index=False)
-        print(f"\nFrozen: appended {len(res)} forecasts to {LOG.relative_to(ROOT)} — commit it now so git timestamps it.")
+        print(f"\nFrozen: appended {len(res)} forecasts to {LOG} — commit it now so git timestamps it.")
 
 
 if __name__ == "__main__":
