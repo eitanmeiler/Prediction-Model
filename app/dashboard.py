@@ -41,7 +41,7 @@ if page == "Upcoming forecasts":
     if d.status.str.contains("no 2026").any():
         st.warning("Draft: the 2026 box office (current market level) isn't loaded yet, so these numbers run high. "
                    "They will not be frozen until it is.")
-    st.caption("Point = ridge forecast; bar = 80% range (from the model's own errors over the last 8 backtest "
+    st.caption("Point = primary forecast (CatBoost + attention once a film's attention window is complete, ridge before); bar = 80% range (from the model's own errors over the last 8 backtest "
                "quarters); T-28 = four weeks out (no theater count), T-7 = one week out.")
     d = d.sort_values("release_date")
     fig = go.Figure()
@@ -59,11 +59,11 @@ if page == "Upcoming forecasts":
     film = st.selectbox("Film detail", d.title)
     r = d[d.title == film].iloc[0]
     c1, c2, c3 = st.columns(3)
-    c1.metric("Forecast", money(r.forecast_m), r.checkpoint)
+    c1.metric("Forecast", money(r.forecast_m), f"{r.checkpoint} · {r.get('primary_model', 'ridge')}")
     c2.metric("80% range", f"{money(r.lo80_m)} – {money(r.hi80_m)}")
-    c3.metric("CatBoost + attention", money(r.get("att_m")) if pd.notna(r.get("att_m")) else "after T-8",
-              f"{money(r.att_lo80_m)} – {money(r.att_hi80_m)}" if pd.notna(r.get("att_m")) else "attention window not complete")
-    st.markdown("**Biggest pushes vs. an average film** (log-opening units; + raises the forecast)")
+    c3.metric("Ridge (traditional features)", money(r.get("ridge_m", r.forecast_m)),
+              f"{money(r.get('ridge_lo80_m'))} – {money(r.get('ridge_hi80_m'))}")
+    st.markdown("**Biggest pushes vs. an average film, ridge model** (log-opening units; + raises the forecast)")
     st.dataframe(pd.DataFrame([x.rsplit(" ", 1) for x in r.drivers.split("; ")], columns=["feature", "push"]),
                  hide_index=True, width="stretch")
     st.markdown("**Most similar past films** (by the features the model weighs most)")

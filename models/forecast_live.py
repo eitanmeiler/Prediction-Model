@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Live opening-weekend forecasts for upcoming releases (rows with upcoming=True in the model table).
 
-Primary model: ridge (tied with CatBoost in the backtest, so the simpler model wins — HYPOTHESES/README).
+Primary model: CatBoost + attention (docs/frozen_spec.md), used once a film's attention window (T-28..T-8) is
+complete; before that the ridge forecast is shown and labelled as such.
 Checkpoint per film: T-7 if its opening theater count is known (tracker/upcoming.json), else T-28.
 80% range: 10th/90th percentile of the ridge backtest's errors over its last 8 quarters at that checkpoint.
 
@@ -120,11 +121,17 @@ def main():
     # missing attention reads as "obscure film" to the model: only report it once the T-28..T-8 window is complete
     incomplete = ~res.att_inputs_complete
     res.loc[incomplete, ["att_m", "att_lo80_m", "att_hi80_m"]] = np.nan
+    # primary (frozen spec, 2026-10-19): CatBoost + attention once its inputs are complete; ridge before that
+    res["ridge_m"], res["ridge_lo80_m"], res["ridge_hi80_m"] = res.forecast_m, res.lo80_m, res.hi80_m
+    res["primary_model"] = np.where(incomplete, "ridge (attention window incomplete)", "catboost_att")
+    use = ~incomplete
+    res.loc[use, "forecast_m"], res.loc[use, "lo80_m"], res.loc[use, "hi80_m"] = \
+        res.loc[use, "att_m"], res.loc[use, "att_lo80_m"], res.loc[use, "att_hi80_m"]
     res["status"] = "draft (no 2026 market data)" if missing_market else "draft"
     (ROOT / "forecasts").mkdir(exist_ok=True)
     res.to_csv(ROOT / "forecasts" / "latest_draft.csv", index=False)  # read by the dashboard; overwritten each run
     pd.set_option("display.width", 220, "display.max_colwidth", 90)
-    print(res[["title", "release_date", "checkpoint", "forecast_m", "lo80_m", "hi80_m", "att_m", "att_lo80_m", "att_hi80_m", "att_inputs_complete"]].to_string(index=False))
+    print(res[["title", "release_date", "checkpoint", "forecast_m", "lo80_m", "hi80_m", "primary_model", "ridge_m"]].to_string(index=False))
     for r in res.itertuples():
         print(f"\n{r.title}: drivers [{r.drivers}]\n  comparables: {r.comparables}")
     if missing_market:
