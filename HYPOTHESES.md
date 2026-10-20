@@ -104,3 +104,30 @@ faith-focused (**Angel, Affirm Films, Pure Flix Entertainment, Pure Flix / Quali
   "insufficient data", not tested.
 - *Correction (same day, before any H6 computation):* the distributor list was reworded to the five names above;
   an earlier draft ambiguously mentioned Fathom Events and Kingdom Story Company.
+
+## Amendment 5 (2026-10-20) — the breakout question, written before any of this was analysed
+
+Motivation (seen, so these are hypotheses, not findings): 2026 breakouts from internet-native creators
+(*Obsession* — Curry Barker; *Backrooms* — Kane Parsons; *Iron Lung* — Markiplier) and the community-audience
+misses in `docs/case_studies_dev.md`.
+
+### Community-audience classes (rules fixed now; the film list is built from these rules and frozen before testing)
+- **C1 creator-native**: the film's director, writer or core IP began as self-published online work (YouTube
+  channel, web series, online creepypasta/ARG/indie web game), documented by a sentence in the creator's or film's
+  Wikipedia article. Studio adaptations of large commercial game franchises are not C1.
+- **C2 game IP**: TMDB keyword "based on video game" (existing `src_game`).
+- **C3 anime**: original language Japanese and genre Animation.
+- **C4 faith audience**: distributor in the H6 list or TMDB keyword "christian" / "faith" / "religion" / "bible".
+- **C5 Spanish-language / Latino audience**: original language Spanish or distributor Pantelion Films.
+
+### Hypotheses
+- **H7 (creator-native under-forecast):** C1 films have positive mean residuals (actual > forecast) in the frozen
+  traditional T-7 model. *Exploratory* on releases before 2026-10-20 (the motivating cases are in that set).
+  *Confirmatory* only on C1 releases after 2026-10-20 (one-sided test once ≥ 8 exist; until then reported as
+  "insufficient data").
+- **H8 (legs):** a "legs" model (log of domestic total ÷ opening, pre-release features + the opening itself) is
+  improved by attention acceleration and community class (C1-C5) beyond traditional features: paired bootstrap
+  gain in MAE, rolling quarterly backtest 2017-2025, films ≥ 10 weeks past release only. This relationship has not
+  been examined before this amendment.
+- **Breakout model (descriptive, not a hypothesis test):** probability that a film opens at ≥ 2× its traditional
+  T-7 forecast; rolling backtest; reported with Brier score, ROC-AUC vs. the base rate, and a calibration table.
