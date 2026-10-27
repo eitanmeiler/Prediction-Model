@@ -8,6 +8,7 @@ Checkpoint per film: T-7 if its opening theater count is known (tracker/upcoming
 
   python models/forecast_live.py           # print forecasts (draft)
   python models/forecast_live.py --freeze  # also append them to forecasts/forecast_log.csv (never edited)
+  python models/forecast_live.py --freeze --films 20261106_the_cat_in_the_hat  # freeze only the films that are due
 
 Training data: films through 2024 until the sealed 2025 evaluation has been run; pass --train-through 2026
 afterwards. Freezing is refused while the current-market feature is missing (no 2026 box office loaded).
@@ -83,6 +84,7 @@ def interval(checkpoint, model="ridge"):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--freeze", action="store_true")
+    ap.add_argument("--films", default="", help="comma-separated film_ids: only these are forecast (and frozen)")
     ap.add_argument("--train-through", type=int, default=2025)  # 2025 unsealed by the confirmatory run (2026-10-19)
     args = ap.parse_args()
 
@@ -90,6 +92,12 @@ def main():
     df["primary_genre"] = df["genres"].fillna("Unknown").str.split("|").str[0]
     train = df[df.in_model & ~df.year.isin(EXCLUDED_YEARS) & (df.year <= args.train_through)]
     up = df[df.upcoming.astype(bool)].sort_values("release_date")
+    if args.films:
+        want = {f.strip() for f in args.films.split(",") if f.strip()}
+        unknown = want - set(up.film_id)
+        if unknown:
+            sys.exit(f"Unknown or not-upcoming film_id(s): {sorted(unknown)}")
+        up = up[up.film_id.isin(want)]
     missing_market = up.mkt_recent_median.isna().any()
     commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True, cwd=ROOT).stdout.strip()
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")

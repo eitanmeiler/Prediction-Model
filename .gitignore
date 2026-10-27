@@ -11,3 +11,8 @@ data/raw/boxoffice/
 keys.env
 data/cache/
 catboost_info/
+
+# local-only folders iCloud must not offload (see icloud memory note)
+*.nosync
+.venv
+data/cache
