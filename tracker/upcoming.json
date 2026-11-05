@@ -19,11 +19,12 @@
   {
    "title": "The Cat in the Hat",
    "release_date": "2026-11-06",
-   "distributor": "Warner Bros."
+   "distributor": "Warner Bros.",
+   "open_theaters": 4000
   },
   {
    "title": "I Play Rocky",
-   "release_date": "2026-11-06",
+   "release_date": "2026-11-13",
    "distributor": "Amazon MGM Studios"
   },
   {
@@ -34,7 +35,8 @@
   {
    "title": "Godzilla Minus Zero",
    "release_date": "2026-11-06",
-   "distributor": "GKIDS"
+   "distributor": "GKIDS",
+   "open_theaters": 3254
   },
   {
    "title": "Ghost Soldier",
