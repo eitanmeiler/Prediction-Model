@@ -1,6 +1,6 @@
 #!/bin/bash
 # Export results.json and push it to the public data repo (github.com/eitanmeiler/opening-night-data),
-# which the Opening Night page on meilerinteractive.com reads live. No-op if nothing changed.
+# which the Opening Night page on eitanmeiler.com reads live. No-op if nothing changed.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 PUB="${OPENING_NIGHT_DATA:-$HOME/Desktop/Claude Projects/Opening Night Data}"
