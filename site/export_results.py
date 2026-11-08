@@ -20,6 +20,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
 FINAL = {"sunday_estimate", "bom_actual"}
+V2_FACTOR = 1.37  # must match models/forecast_live.py (Amendment 7)
+A7_START = "2026-11-11"  # Amendment 7: v2 and Combined are locked and scored from these openings on
 SIDE_CASES = {"Wild Horse Nine"}  # limited releases, outside the model's population (HYPOTHESES.md): shown, not scored
 
 
@@ -59,6 +61,17 @@ def main():
     ind_by = {key(r): r for _, r in ind.iterrows()}
     act_by = {key(r): r for _, r in act.iterrows()}
 
+    v2_by = {}
+    dr_all = ROOT / "forecasts/latest_draft.csv"
+    if dr_all.exists() and "v2_forecast_m" in pd.read_csv(dr_all, nrows=0).columns:
+        for _, r in pd.read_csv(dr_all).iterrows():
+            v2_by[(r.title, str(r.release_date)[:10])] = (r, "retro")
+    lv2 = ROOT / "forecasts/forecast_log_v2.csv"
+    if lv2.exists():
+        l = pd.read_csv(lv2)
+        l["rank"] = l.checkpoint.map({"T-7": 0, "T-28": 1})
+        for _, r in l.sort_values(["rank", "frozen_at_utc"], ascending=[False, True]).iterrows():
+            v2_by[(r.title, str(r.release_date)[:10])] = (r, "locked")  # later rows win: the T-7 row, newest
     films = []
     for _, r in ours.iterrows():
         k = key(r)
@@ -71,6 +84,20 @@ def main():
             f["hollywood"] = {"source": h.source, "published": str(h.published), "low_m": num(h.low_m),
                               "high_m": num(h.high_m), "mid_m": num((h.low_m + h.high_m) / 2), "url": h.url,
                               "note": None if pd.isna(h.notes) else h.notes}
+        vk = v2_by.get(k)
+        if vk is not None:
+            v, how = vk
+            if how == "locked":
+                f["v2"] = {"forecast_m": num(v.v2_forecast_m), "low_m": num(v.v2_lo80_m), "high_m": num(v.v2_hi80_m),
+                           "adjusted": bool(v.v2_adjusted), "basis": "locked"}
+            else:  # retro: apply the Amendment 7 rule to the forecast that was actually locked (or drafted) for this film
+                fx = V2_FACTOR if bool(v.v2_adjusted) else 1.0
+                o = f["ours"]
+                f["v2"] = {"forecast_m": num(o["forecast_m"] * fx), "low_m": num(o["low_m"] * fx),
+                           "high_m": num(o["high_m"] * fx), "adjusted": bool(v.v2_adjusted), "basis": "retro"}
+        if "hollywood" in f and f["ours"]["forecast_m"]:
+            f["combined"] = {"forecast_m": num((f["ours"]["forecast_m"] * f["hollywood"]["mid_m"]) ** 0.5),
+                             "basis": "locked" if str(r.release_date) >= A7_START else "retro"}
         a = act_by.get(k)
         if a is not None:
             av = float(a.actual_m)
@@ -82,7 +109,9 @@ def main():
                           "in_our_range": f["ours"]["low_m"] <= av <= f["ours"]["high_m"],
                           "in_hollywood_range": None if hm is None else f["hollywood"]["low_m"] <= av <= f["hollywood"]["high_m"],
                           "closer": None if hi_err is None else ("ours" if om < hi_err else "hollywood" if hi_err < om else "tie"),
-                          "provisional": a.status not in FINAL}
+                          "provisional": a.status not in FINAL,
+                          "v2_miss_pct": miss(av, f.get("v2", {}).get("forecast_m")),
+                          "combined_miss_pct": miss(av, f.get("combined", {}).get("forecast_m"))}
             f["status"] = "graded"
         else:
             f["status"] = "awaiting_results"
@@ -116,6 +145,15 @@ def main():
                          "hollywood": sum(f["grade"]["closer"] == "hollywood" for f in gh),
                          "tie": sum(f["grade"]["closer"] == "tie" for f in gh)},
     }
+    a7 = [f for f in g if f["release_date"] >= A7_START and f.get("combined", {}).get("basis") == "locked"]
+    summary["amendment7"] = {
+        "since": A7_START, "films": len(a7),
+        "median_miss_pct": {"v1": med([f["grade"]["our_miss_pct"] for f in a7]),
+                            "v2": med([f["grade"]["v2_miss_pct"] for f in a7 if f["grade"]["v2_miss_pct"] is not None]),
+                            "combined": med([f["grade"]["combined_miss_pct"] for f in a7]),
+                            "hollywood": med([f["grade"]["hollywood_miss_pct"] for f in a7])},
+        "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only.",
+    }
     out = {
         "project": "Opening Night: what predicts a box office opening now?",
         "author": "Eitan Meiler",
@@ -127,6 +165,9 @@ def main():
             "miss": "|actual / forecast - 1|, in percent.",
             "draft": "The Oct 23 films were scored on drafts committed Oct 20 (the one-week lock-in did not run).",
             "provisional": "Graded on a Saturday projection; updated when Sunday estimates or final numbers arrive.",
+            "v2": "v1 x 1.37 for non-English films opening in 2,000+ theaters (a blind spot found in the backtest); otherwise equal to v1.",
+            "combined": "Geometric mean of our v1 forecast and Hollywood's midpoint; tests whether the two carry different information.",
+            "retro": "Computed after release for illustration; not part of the Amendment 7 test, which starts with the Nov 11 openings.",
         },
         "summary": summary,
         "films": films,

@@ -30,6 +30,8 @@ from feature_sets import ATTENTION, CATEGORICAL, checkpoint_features  # noqa: E4
 TABLE = ROOT / "data" / "processed" / "model_table.csv"
 BACKTEST = ROOT / "data" / "processed" / "backtest_predictions.csv"
 LOG = ROOT / "forecasts" / "forecast_log.csv"
+LOG_V2 = ROOT / "forecasts" / "forecast_log_v2.csv"  # Amendment 7
+V2_FACTOR = 1.37  # Amendment 7: fixed 2026-11-08, never refit during the season
 
 
 def fit_ridge(train, feats):
@@ -136,9 +138,18 @@ def main():
     res.loc[use, "forecast_m"], res.loc[use, "lo80_m"], res.loc[use, "hi80_m"] = \
         res.loc[use, "att_m"], res.loc[use, "att_lo80_m"], res.loc[use, "att_hi80_m"]
     res["status"] = "draft (no 2026 market data)" if missing_market else "draft"
+    # Amendment 7 (2026-11-08): v2 = v1 x 1.37 for non-English films opening in 2,000+ theaters. Logged separately
+    # (forecasts/forecast_log_v2.csv) so the v1 log's columns never change.
+    meta = up.set_index("film_id")[["english", "open_theaters"]]
+    flag = res.film_id.map(lambda f: bool(meta.loc[f, "english"] == 0 and meta.loc[f, "open_theaters"] >= 2000))
+    v2 = res[["frozen_at_utc", "git_commit", "film_id", "title", "release_date", "checkpoint"]].copy()
+    v2["v2_adjusted"] = flag.values
+    for c in ("forecast_m", "lo80_m", "hi80_m"):
+        v2["v2_" + c] = (res[c] * np.where(flag, V2_FACTOR, 1.0)).round(1)
     (ROOT / "forecasts").mkdir(exist_ok=True)
     if not args.films:  # a --films run (freezing only the due films) must not wipe the other drafts
-        res.to_csv(ROOT / "forecasts" / "latest_draft.csv", index=False)  # read by the dashboard and the site
+        res.merge(v2[["film_id", "v2_adjusted", "v2_forecast_m", "v2_lo80_m", "v2_hi80_m"]], on="film_id") \
+           .to_csv(ROOT / "forecasts" / "latest_draft.csv", index=False)  # read by the dashboard and the site
     pd.set_option("display.width", 220, "display.max_colwidth", 90)
     print(res[["title", "release_date", "checkpoint", "forecast_m", "lo80_m", "hi80_m", "primary_model", "ridge_m"]].to_string(index=False))
     for r in res.itertuples():
@@ -148,7 +159,8 @@ def main():
     elif args.freeze:
         LOG.parent.mkdir(exist_ok=True)
         res.to_csv(LOG, mode="a", header=not LOG.exists(), index=False)
-        print(f"\nFrozen: appended {len(res)} forecasts to {LOG} — commit it now so git timestamps it.")
+        v2.to_csv(LOG_V2, mode="a", header=not LOG_V2.exists(), index=False)
+        print(f"\nFrozen: appended {len(res)} forecasts to {LOG} (and v2 to {LOG_V2.name}) — commit both now.")
 
 
 if __name__ == "__main__":
