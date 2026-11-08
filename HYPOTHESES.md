@@ -153,3 +153,28 @@ above forecast while non-horror creator films flopped (exploratory, n = 8).
 - **H7b (creator-native horror):** C1 films that are horror (TMDB genre) open above the traditional T-7 forecast.
   Exploratory on everything released before 2026-10-20 (it was suggested by those films). Confirmatory only on
   C1 horror releases after 2026-10-20 (≥ 5 needed; otherwise reported as insufficient data).
+
+## Amendment 7 (2026-11-08): v2 adjustment and a combined forecast, written before the Nov 11 lock-ins
+
+**Why.** In the live season so far, Boxoffice Pro's pre-release forecast was closer than ours on 3 of 4 graded films.
+A backtest check (2022-2025, CatBoost + attention, T-7) found one blind spot, matching the Godzilla Minus Zero
+miss: non-English films opening in 2,000+ theaters (Japanese anime and event releases) opened above our forecast
+in 10 of 11 cases since 2017. A general "stretch" recalibration for film size was also tested. It made the 2024
+and 2025 typical miss worse, so it is **not** adopted.
+
+**v1 is unchanged and remains the official record.** Every locked forecast stays as logged. The following are
+added, locked alongside v1 from the Nov 11 openings on:
+
+1. **v2 = v1 × 1.37 for non-English films with a known opening theater count of 2,000 or more**; v2 = v1 for all
+   other films. The 80% range is scaled by the same factor. The factor is exp(mean log error) of the 11 such
+   films in the 2017-2025 T-7 backtest (95% CI 0.95-1.86), fixed now and never refit during the season. Note
+   that its interval includes 1.0: it is a pre-registered correction, not an established effect.
+2. **Combined = the geometric mean of v1 and Hollywood's midpoint** (Boxoffice Pro's last pre-release range, as
+   recorded in `live_season/industry.csv` before release). It is computed only for films with a pre-release
+   Hollywood row.
+
+**Evaluation (descriptive; too few films for a confirmatory test).** Wide releases from Nov 11 to Dec 31, 2026,
+graded on Sunday estimates or final numbers. Measures: the median miss |actual / forecast − 1| for v1, v2,
+Combined and Hollywood; head-to-head counts; and 80%-range coverage for v1 and v2. Expectation, stated in
+advance: Combined beats both v1 and Hollywood on median miss (H10). v2 differs from v1 only on qualifying
+films, so it will be reported film by film.
