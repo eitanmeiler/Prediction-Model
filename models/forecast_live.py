@@ -137,7 +137,8 @@ def main():
         res.loc[use, "att_m"], res.loc[use, "att_lo80_m"], res.loc[use, "att_hi80_m"]
     res["status"] = "draft (no 2026 market data)" if missing_market else "draft"
     (ROOT / "forecasts").mkdir(exist_ok=True)
-    res.to_csv(ROOT / "forecasts" / "latest_draft.csv", index=False)  # read by the dashboard; overwritten each run
+    if not args.films:  # a --films run (freezing only the due films) must not wipe the other drafts
+        res.to_csv(ROOT / "forecasts" / "latest_draft.csv", index=False)  # read by the dashboard and the site
     pd.set_option("display.width", 220, "display.max_colwidth", 90)
     print(res[["title", "release_date", "checkpoint", "forecast_m", "lo80_m", "hi80_m", "primary_model", "ridge_m"]].to_string(index=False))
     for r in res.itertuples():
