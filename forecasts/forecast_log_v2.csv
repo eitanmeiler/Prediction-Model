@@ -1,0 +1,2 @@
+frozen_at_utc,git_commit,film_id,title,release_date,checkpoint,v2_adjusted,v2_forecast_m,v2_lo80_m,v2_hi80_m
+2026-11-10T16:39:42Z,04176b6,20261111_ghost_soldier,Ghost Soldier,2026-11-11,T-28,False,4.0,1.5,9.2
