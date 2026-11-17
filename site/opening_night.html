@@ -60,6 +60,12 @@ tr:last-child td{border-bottom:0}
 .up{color:var(--ok)} .down{color:var(--accent)}
 .empty{border:1px dashed var(--rule);border-radius:6px;padding:16px 18px;color:var(--ink2);margin:14px 0}
 footer{border-top:1px solid var(--rule);margin-top:40px;padding-top:18px}
+.score th.num,.score td.num{width:22%}
+.score td.lbl{font-size:15px}
+.score td.lbl small{display:block;font:400 12px/1.4 var(--mono);color:var(--ink2);margin-top:2px}
+.score tr.sub td{color:var(--ink2)}
+.lead-cell{color:var(--accent);font-weight:500}
+.tag{font:500 10px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--rule);border-radius:3px;padding:2px 5px;margin-left:6px;white-space:nowrap}
 a{color:var(--line)}
 :focus-visible{outline:2px solid var(--line);outline-offset:2px}
 @media (max-width:560px){body{font-size:16px}.dek{font-size:18px}h2{font-size:27px}}
@@ -154,6 +160,11 @@ a{color:var(--line)}
 <section id="live">
   <h2>Live forecasts</h2>
   <p class="col">Each forecast is committed to git before the film opens, then graded against the real opening. Nothing gets revised after the fact.</p>
+  <h3>Against Hollywood, scored fairly</h3>
+  <p class="col">Boxoffice Pro publishes a narrow range, about 1.4× from low to high. Our 80% range is about 4× wide, so "the actual landed inside it" proves little on its own. Boxoffice Pro also has paid tracking surveys and presales. The model has none of that: only film facts, past box office and Wikipedia page views.</p>
+  <p class="col">So the comparison was fixed in writing on Nov 17, before the Nov 20 openings (Amendment 8). Our forecast gets <strong>a range exactly as wide as theirs</strong>, so the range test measures aim, not width. The headline is still forecast against forecast. The claim is not that free data beats paid tracking. It is how big the gap is, and whether averaging the two beats Boxoffice Pro alone, which would mean the model sees something their tracking misses.</p>
+  <div id="scorecard"></div>
+  <h3>Every forecast</h3>
   <div id="tracker"></div>
   <h3>This season's calendar</h3>
   <div class="panel scroll">
@@ -163,7 +174,7 @@ a{color:var(--line)}
         <tr><td class="x">Oct 23</td><td>Clayface · Klara and the Sun</td><td class="x">Oct 21</td></tr>
         <tr><td class="x">Nov 6</td><td><strong>The Cat in the Hat</strong> (headline test) · I Play Rocky · Wild Horse Nine (limited release, side case)</td><td class="x">Nov 4</td></tr>
         <tr><td class="x">Nov 11–13</td><td>Ghost Soldier · Ebenezer · How to Rob a Bank</td><td class="x">Nov 9–11</td></tr>
-        <tr><td class="x">Nov 20</td><td>The Hunger Games: Sunrise on the Reaping</td><td class="x">Nov 18</td></tr>
+        <tr><td class="x">Nov 20</td><td>The Hunger Games: Sunrise on the Reaping · I Play Rocky (first films in the clean test)</td><td class="x">Nov 18–19</td></tr>
         <tr><td class="x">Nov 25</td><td>Focker-in-Law · Hexed</td><td class="x">Nov 23</td></tr>
       </tbody>
     </table>
@@ -213,19 +224,60 @@ const DRIVERS = {"z_star":["Star track record",[[2013,-0.097,-0.285,0.091],[2014
 const tracker=document.getElementById("tracker");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const money=m=>(m==null||m==="")?"—":"$"+Number(m).toFixed(1)+"M";
-function renderEmpty(msg){tracker.innerHTML=`<div class="empty">${msg}</div>`}
+const scorecard=document.getElementById("scorecard");
+const A8_START="2026-11-18";
+function renderEmpty(msg){tracker.innerHTML=`<div class="empty">${msg}</div>`;scorecard.innerHTML=""}
+const miss=(a,f)=>(a==null||!f)?null:Math.abs(a/f-1)*100;            // |actual / forecast - 1|, as in the paper
+const inside=(a,lo,hi)=>a!=null&&lo!=null&&hi!=null&&a>=lo&&a<=hi;
+const median=xs=>{if(!xs.length)return null;const s=[...xs].sort((a,b)=>a-b),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
+const pct=v=>v==null?"—":v.toFixed(0)+"%";
+function tally(rows){
+  const g=rows.filter(r=>r.actual_m!=null&&!r.side_case&&r.hw_mid_m!=null);
+  const om=median(g.map(r=>miss(r.actual_m,r.forecast_m))), hm=median(g.map(r=>miss(r.actual_m,r.hw_mid_m)));
+  const cm=median(g.filter(r=>r.combined_m).map(r=>miss(r.actual_m,r.combined_m)));
+  const closer=g.map(r=>{const o=miss(r.actual_m,r.forecast_m),h=miss(r.actual_m,r.hw_mid_m);return o<h?"o":h<o?"h":"t"});
+  return {n:g.length,
+    hitsO:g.filter(r=>inside(r.actual_m,r.matched_lo_m,r.matched_hi_m)).length,
+    hitsH:g.filter(r=>inside(r.actual_m,r.hw_lo_m,r.hw_hi_m)).length,
+    closeO:closer.filter(c=>c==="o").length, closeH:closer.filter(c=>c==="h").length,
+    om, hm, cm, gap:(om!=null&&hm)?om/hm:null,
+    cov:g.filter(r=>inside(r.actual_m,r.lo80_m,r.hi80_m)).length};
+}
+function scoreCol(t,k){
+  if(!t.n)return "—";
+  const v={hits:`${t.hitsO} vs ${t.hitsH}`,closer:`${t.closeO} vs ${t.closeH}`,miss:`${pct(t.om)} vs ${pct(t.hm)}`,
+    gap:t.gap==null?"—":t.gap.toFixed(2),comb:t.cm==null?"—":`${pct(t.cm)} ${t.cm<t.hm?"(beats them)":"(doesn't)"}`,
+    cov:`${t.cov} of ${t.n}`}[k];
+  return v;
+}
+function renderScorecard(rows){
+  const clean=tally(rows.filter(r=>r.release_date>=A8_START)), retro=tally(rows.filter(r=>r.release_date<A8_START));
+  const line=(k,label,help,sub)=>`<tr${sub?' class="sub"':""}><td class="lbl">${label}<small>${help}</small></td><td class="num">${scoreCol(clean,k)}</td><td class="num">${scoreCol(retro,k)}</td></tr>`;
+  scorecard.innerHTML=`<div class="panel scroll"><table class="score">
+    <thead><tr><th>Measure · ours vs Boxoffice Pro</th><th class="num">Clean test<br>Nov 18 – Dec 31 · ${clean.n} films</th><th class="num">Before the rules<br>Oct 23 – Nov 13 · ${retro.n} films</th></tr></thead>
+    <tbody>
+      ${line("hits","Actual inside a same-width range","Our forecast with their range width. Tests aim, not width.")}
+      ${line("closer","Forecast closer to the actual","Film by film, whose number was nearer.")}
+      ${line("miss","Typical miss","Median of |actual ÷ forecast − 1|. Lower is better.")}
+      ${line("gap","Gap ratio","Our typical miss ÷ theirs. 1.00 is level; above 1 means behind.")}
+      ${line("comb","Averaging the two","Geometric mean of both forecasts. Beating them alone means the model adds information.")}
+      ${line("cov","Our 80% range: honesty check","About 8 in 10 should land inside. Not a contest with them.",true)}
+    </tbody></table>
+    <p class="note" style="margin:12px 0 0">${clean.n?"":"The clean test starts with the Nov 20 openings; its column fills in as those films are graded. "}The right-hand column was already known when the rules were written, so it is shown for context and kept out of the test. Limited releases (Wild Horse Nine) are shown below but not scored.</p></div>`;
+}
 function renderRows(rows){
-  if(!rows.length){renderEmpty("No forecasts frozen yet. The first ones (Clayface and Klara and the Sun) are due Oct 21, two days before they open. Each will appear here with its range, model and git commit, then its actual opening.");return}
-  const graded=rows.filter(r=>r.actual_m!=null);
-  const inRange=graded.filter(r=>r.actual_m>=r.lo80_m&&r.actual_m<=r.hi80_m).length;
-  const misses=graded.map(r=>Math.abs(r.forecast_m/r.actual_m-1)*100).sort((a,b)=>a-b);
-  const med=misses.length?misses[Math.floor((misses.length-1)/2)]:null;
-  let head=graded.length?`<div class="stats"><div class="stat"><b>${graded.length}</b><span>forecasts graded</span></div><div class="stat"><b>${med.toFixed(0)}%</b><span>typical miss</span></div><div class="stat"><b>${inRange}/${graded.length}</b><span>inside the 80% range</span></div></div>`:"";
+  if(!rows.length){renderEmpty("No forecasts are loaded yet. Each film appears here once its forecast is locked, with our range, Boxoffice Pro's range and the git commit, then its actual opening.");return}
+  renderScorecard(rows);
   const body=rows.map(r=>{
-    const res=r.actual_m==null?`<span class="note">opens ${esc(r.release_date)}</span>`:
-      `${money(r.actual_m)} <span class="verdict ${r.actual_m>=r.lo80_m&&r.actual_m<=r.hi80_m?"v-yes":"v-no"}">${r.actual_m>=r.lo80_m&&r.actual_m<=r.hi80_m?"in range":"outside"}</span>`;
-    return `<tr><td>${esc(r.title)}</td><td class="num">${esc(r.checkpoint)}</td><td class="num">${money(r.forecast_m)}</td><td class="num">${money(r.lo80_m)} – ${money(r.hi80_m)}</td><td>${res}</td><td class="note">${esc(r.model)}<br>${esc(r.frozen_at_utc)} · ${esc(r.git_commit)}</td></tr>`}).join("");
-  tracker.innerHTML=head+`<div class="panel scroll"><table><thead><tr><th>Film</th><th class="num">Point</th><th class="num">Forecast</th><th class="num">80% range</th><th>Actual</th><th>Model · frozen</th></tr></thead><tbody>${body}</tbody></table></div>`;
+    const a=r.actual_m, o=miss(a,r.forecast_m), h=miss(a,r.hw_mid_m);
+    const res=a==null?`<span class="note">opens ${esc(r.release_date)}</span>`:`${money(a)}${r.provisional?' <span class="tag">prelim</span>':""}`;
+    const win=(a==null||h==null||r.side_case)?"":o<h?"ours":h<o?"hollywood":"";
+    const ours=`<span class="${win==="ours"?"lead-cell":""}">${money(r.forecast_m)}</span>${a!=null&&r.matched_lo_m!=null?` <span class="verdict ${inside(a,r.matched_lo_m,r.matched_hi_m)?"v-yes":"v-no"}">${inside(a,r.matched_lo_m,r.matched_hi_m)?"hit":"miss"}</span>`:""}<br><span class="note">${r.matched_lo_m!=null?money(r.matched_lo_m)+" – "+money(r.matched_hi_m):""}</span>`;
+    const hw=r.hw_mid_m==null?`<span class="note">none recorded</span>`:`<span class="${win==="hollywood"?"lead-cell":""}">${money(r.hw_mid_m)}</span>${a!=null?` <span class="verdict ${inside(a,r.hw_lo_m,r.hw_hi_m)?"v-yes":"v-no"}">${inside(a,r.hw_lo_m,r.hw_hi_m)?"hit":"miss"}</span>`:""}<br><span class="note">${money(r.hw_lo_m)} – ${money(r.hw_hi_m)}</span>`;
+    const label=`${esc(r.title)}${r.side_case?'<span class="tag">side case</span>':""}${r.release_date<A8_START?'<span class="tag">before rules</span>':""}`;
+    return `<tr><td>${label}<br><span class="note">${esc(r.release_date)} · ${esc(r.checkpoint)}${r.kind==="draft"?" draft":""}</span></td><td class="num">${ours}</td><td class="num">${hw}</td><td class="num">${res}</td><td class="num note">${money(r.lo80_m)} – ${money(r.hi80_m)}</td><td class="note">${esc(r.git_commit)}<br>${esc(String(r.frozen_at_utc||"").slice(0,10))}</td></tr>`}).join("");
+  tracker.innerHTML=`<div class="panel scroll"><table><thead><tr><th>Film</th><th class="num">Ours · same-width range</th><th class="num">Boxoffice Pro · range</th><th class="num">Actual</th><th class="num">Our 80% range</th><th>Locked in</th></tr></thead><tbody>${body}</tbody></table>
+    <p class="note" style="margin:12px 0 0">The closer forecast is in red. Our same-width range has the same high ÷ low ratio as Boxoffice Pro's, centred on our forecast. "Prelim" means graded on studio Sunday estimates until final numbers arrive.</p></div>`;
 }
 renderEmpty("Loading live forecasts…");
 (async()=>{

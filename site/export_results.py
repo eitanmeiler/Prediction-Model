@@ -95,6 +95,7 @@ def main():
         k = key(r)
         f = {"title": r.title, "release_date": str(r.release_date), "checkpoint": r.checkpoint,
              "locked_at_utc": r.frozen_at_utc, "kind": r.kind,
+             "git_commit": None if pd.isna(r.get("git_commit")) else str(r.git_commit),
              "ours": {"forecast_m": num(r.forecast_m), "low_m": num(r.lo80_m), "high_m": num(r.hi80_m),
                       "model": r.primary_model if "primary_model" in r and pd.notna(r.get("primary_model")) else r.model}}
         h = ind_by.get(k)
@@ -122,7 +123,7 @@ def main():
         a = act_by.get(k)
         if a is not None:
             av = float(a.actual_m)
-            f["actual"] = {"m": num(av, 2), "theaters": None if pd.isna(a.theaters) else int(a.theaters),
+            f["actual"] = {"m": num(av, 3), "theaters": None if pd.isna(a.theaters) else int(a.theaters),
                            "status": a.status, "source": a.source, "url": a.url, "as_of": str(a.as_of)}
             hm = f.get("hollywood", {}).get("mid_m")
             om, hi_err = miss(av, f["ours"]["forecast_m"]), miss(av, hm)
