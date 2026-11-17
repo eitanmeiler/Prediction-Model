@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FINAL = {"sunday_estimate", "bom_actual"}
 V2_FACTOR = 1.37  # must match models/forecast_live.py (Amendment 7)
 A7_START = "2026-11-11"  # Amendment 7: v2 and Combined are locked and scored from these openings on
+A8_START = "2026-11-18"  # Amendment 8: equal-width range test; clean set starts with these openings
 SIDE_CASES = {"Wild Horse Nine"}  # limited releases, outside the model's population (HYPOTHESES.md): shown, not scored
 
 
@@ -43,6 +44,23 @@ def load_ours():
     rows.append(d)
     out = pd.concat(rows, ignore_index=True)
     return out.drop_duplicates(["title", "release_date"], keep="first")
+
+
+def days_before(stamp, release):
+    """Days between a forecast's date and release; None if the date is only a month (e.g. '2026-10')."""
+    s = str(stamp)[:10]
+    try:
+        return (date.fromisoformat(str(release)[:10]) - date.fromisoformat(s)).days
+    except ValueError:
+        return None
+
+
+def matched_range(forecast, h_low, h_high):
+    """Amendment 8: a range with Hollywood's relative width (high/low), centred on our forecast on the log scale."""
+    if not forecast or not h_low or not h_high or h_low <= 0:
+        return None
+    half = (h_high / h_low) ** 0.5
+    return {"low_m": num(forecast / half), "high_m": num(forecast * half), "width_ratio": num(h_high / h_low, 2)}
 
 
 def miss(actual, forecast):
@@ -83,7 +101,10 @@ def main():
         if h is not None:
             f["hollywood"] = {"source": h.source, "published": str(h.published), "low_m": num(h.low_m),
                               "high_m": num(h.high_m), "mid_m": num((h.low_m + h.high_m) / 2), "url": h.url,
-                              "note": None if pd.isna(h.notes) else h.notes}
+                              "note": None if pd.isna(h.notes) else h.notes,
+                              "days_before": days_before(h.published, r.release_date)}
+            f["ours"]["matched"] = matched_range(f["ours"]["forecast_m"], h.low_m, h.high_m)
+        f["ours"]["days_before"] = days_before(r.frozen_at_utc, r.release_date)
         vk = v2_by.get(k)
         if vk is not None:
             v, how = vk
@@ -108,6 +129,8 @@ def main():
             f["grade"] = {"our_miss_pct": om, "hollywood_miss_pct": hi_err,
                           "in_our_range": f["ours"]["low_m"] <= av <= f["ours"]["high_m"],
                           "in_hollywood_range": None if hm is None else f["hollywood"]["low_m"] <= av <= f["hollywood"]["high_m"],
+                          "in_our_matched_range": None if not f["ours"].get("matched") else
+                              f["ours"]["matched"]["low_m"] <= av <= f["ours"]["matched"]["high_m"],
                           "closer": None if hi_err is None else ("ours" if om < hi_err else "hollywood" if hi_err < om else "tie"),
                           "provisional": a.status not in FINAL,
                           "v2_miss_pct": miss(av, f.get("v2", {}).get("forecast_m")),
@@ -154,6 +177,25 @@ def main():
                             "hollywood": med([f["grade"]["hollywood_miss_pct"] for f in a7])},
         "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only.",
     }
+    def fair(fs):
+        fs = [f for f in fs if f["grade"]["hollywood_miss_pct"] is not None]
+        om, hm = med([f["grade"]["our_miss_pct"] for f in fs]), med([f["grade"]["hollywood_miss_pct"] for f in fs])
+        cm = [f["grade"]["combined_miss_pct"] for f in fs if f["grade"]["combined_miss_pct"] is not None]
+        return {"films": len(fs),
+                "equal_width_hits": {"ours": sum(bool(f["grade"]["in_our_matched_range"]) for f in fs),
+                                     "hollywood": sum(bool(f["grade"]["in_hollywood_range"]) for f in fs)},
+                "closer": {"ours": sum(f["grade"]["closer"] == "ours" for f in fs),
+                           "hollywood": sum(f["grade"]["closer"] == "hollywood" for f in fs)},
+                "median_miss_pct": {"ours": om, "hollywood": hm, "combined": med(cm)},
+                "gap_ratio": None if not om or not hm else round(om / hm, 2),
+                "combined_beats_hollywood": None if not cm or hm is None else med(cm) < hm}
+    summary["amendment8"] = {
+        "since": A8_START,
+        "clean": fair([f for f in g if f["release_date"] >= A8_START]),
+        "retro": fair([f for f in g if f["release_date"] < A8_START]),
+        "note": "Pre-registered 2026-11-17 (HYPOTHESES.md Amendment 8). Equal-width test: our forecast given "
+                "Hollywood's range width. Films before Nov 18 are retro, outside the clean totals.",
+    }
     out = {
         "project": "Opening Night: what predicts a box office opening now?",
         "author": "Eitan Meiler",
@@ -167,6 +209,8 @@ def main():
             "provisional": "Graded on a Saturday projection; updated when Sunday estimates or final numbers arrive.",
             "v2": "v1 x 1.37 for non-English films opening in 2,000+ theaters (a blind spot found in the backtest); otherwise equal to v1.",
             "combined": "Geometric mean of our v1 forecast and Hollywood's midpoint; tests whether the two carry different information.",
+            "matched": "Our forecast given Hollywood's range width (same high/low ratio), so 'inside the range' compares aim, not width.",
+            "gap_ratio": "Our median miss divided by Hollywood's: how far free public data is from paid tracking (1.0 = level).",
             "retro": "Computed after release for illustration; not part of the Amendment 7 test, which starts with the Nov 11 openings.",
         },
         "summary": summary,

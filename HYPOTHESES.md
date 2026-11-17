@@ -178,3 +178,34 @@ graded on Sunday estimates or final numbers. Measures: the median miss |actual /
 Combined and Hollywood; head-to-head counts; and 80%-range coverage for v1 and v2. Expectation, stated in
 advance: Combined beats both v1 and Hollywood on median miss (H10). v2 differs from v1 only on qualifying
 films, so it will be reported film by film.
+
+## Amendment 8 (2026-11-17): a fair scorecard against Hollywood, written before the Nov 20 openings
+
+**Why.** Our 80% range is about 4× wide (high ÷ low); Boxoffice Pro's is about 1.3-1.7×. "Inside the range" is
+therefore not a fair contest: a range that wide is hard to miss, and Boxoffice Pro never states what share of
+openings its range is meant to contain. Boxoffice Pro also has paid tracking surveys and presales and publishes a
+few days before release; we use free public data and lock up to a week earlier (T-7, or T-28 for films whose
+theater count was not out). This amendment fixes, before any further results, how the comparison is scored.
+Nothing already logged changes.
+
+**1. Range-inside counts are demoted to a calibration check.** Our 80% coverage is still reported (it tests
+whether our ranges are honest), but never as a head-to-head result.
+
+**2. Equal-width range test.** For every film with a pre-release Boxoffice Pro range, we build a *matched range*:
+the same relative width as theirs (ratio r = high ÷ low), centred on our locked forecast F on the log scale:
+F ÷ √r to F × √r. The head-to-head range result is: how many actual openings fall in our matched range vs. in
+theirs. Same width, different centre, so this compares only who aimed better.
+
+**3. Point forecasts stay the headline** (unchanged from the live log): median miss |actual / forecast − 1| and
+film-by-film "closer" counts, ours vs. Boxoffice Pro's midpoint.
+
+**4. The information gap is reported, not hidden.** Each film lists both forecasts' dates (days before release).
+The claim this project makes is **not** "free data beats paid tracking." It is two measured questions:
+- (a) *How big is the gap?* Our median miss ÷ Boxoffice Pro's median miss.
+- (b) *Does free public data add anything they don't have?* This is Amendment 7's Combined test (H10): if the
+  geometric mean of ours and theirs beats Boxoffice Pro alone, our model carries information their tracking
+  misses. This is the result that counts most.
+
+**Films covered.** Clean (pre-registered) set: wide releases opening **Nov 18 – Dec 31, 2026**, graded on Sunday
+estimates or final numbers. Films through Nov 13 were already graded when this was written; they are shown with
+the same measures but marked **retro** and kept out of the clean totals. Limited releases stay side cases.
