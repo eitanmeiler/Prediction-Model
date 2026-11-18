@@ -3,7 +3,7 @@
 Built from site/export_results.py (same grading as the public site), so both pages always agree.
 Writes forecasts/site_rows.json: {doc_id: row}. Claude then writes them to the page's `forecasts` collection
 (ArtifactData batch) — the page itself never has write access for viewers.
-Page: https://claude.ai/artifact/NRT8g5q5HFdsYzPocSpkHV
+Page: the living research page (site/opening_night.html)
 """
 import json
 import re

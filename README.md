@@ -26,7 +26,7 @@ Full numbers: [docs/confirmatory_results.md](docs/confirmatory_results.md), [doc
 [docs/figures/drivers_over_time.png](docs/figures/drivers_over_time.png), case-study list [docs/biggest_misses.md](docs/biggest_misses.md).
 Caveat: attention may partly reflect marketing spend, which is not observable ([LIMITATIONS.md](LIMITATIONS.md)).
 
-**Living research page:** https://claude.ai/artifact/NRT8g5q5HFdsYzPocSpkHV (private until shared; source `site/opening_night.html`, live rows from `tracker/site_rows.py`).
+**Live results:** published as JSON in [opening-night-data](https://github.com/eitanmeiler/opening-night-data) (built by `site/export_results.py`; research-page source `site/opening_night.html`, live rows from `tracker/site_rows.py`).
 
 ## How it works
 
