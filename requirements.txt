@@ -138,3 +138,4 @@ websocket_client==1.9.2
 websockets==17.2
 widgetsnbextension==4.0.16
 wrapt==2.5.1
+pytrends==4.9.2

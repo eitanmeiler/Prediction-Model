@@ -209,3 +209,65 @@ The claim this project makes is **not** "free data beats paid tracking." It is t
 **Films covered.** Clean (pre-registered) set: wide releases opening **Nov 18 – Dec 31, 2026**, graded on Sunday
 estimates or final numbers. Films through Nov 13 were already graded when this was written; they are shown with
 the same measures but marked **retro** and kept out of the clean totals. Limited releases stay side cases.
+
+## Amendment 9 (2026-11-23): the big-film ceiling. Two fixes tested, one adopted, written before the Nov 25 openings
+
+**Why.** *The Hunger Games: Sunrise on the Reaping* (Nov 20) was locked in at $43.6M and opened at about $120M.
+Two causes were found:
+
+1. **Split franchises.** TMDB files the four original Hunger Games films (2012-15, $103-158M openings) and the
+   prequels as two separate collections, so the franchise inputs saw only *The Ballad of Songbirds & Snakes* ($44.6M).
+2. **A ceiling on big openings.** At T-7 the model under-forecast 40 of the 42 openings above $100M in 2017-2025, by a
+   median of 1.76×. Tree models predict by averaging similar past films, so they rarely forecast beyond the
+   typical big release.
+
+**Backtest** (`analysis/amendment9_backtest.py`, `docs/amendment9_backtest.md`). CatBoost + attention at T-7, rolling
+quarterly 2017-2025; every correction is fitted only on earlier quarters.
+
+| Variant | Typical miss | 2022-25 | $100M+: actual ÷ forecast | Under-forecast |
+|---|---|---|---|---|
+| Current | 33.4% | 35.5% | ×1.76 | 40/42 |
+| A: franchise family (best, mean and last prior opening across linked collections) | 34.0% | 35.9% | ×1.84 | 40/42 |
+| B: top-end correction, err = b·max(0, log forecast − log $25M) | 33.3% | 34.9% | ×1.62 | 36/42 |
+
+Applied to *Sunrise on the Reaping*: A $40.0M, B $46.8M, actual about $120M. **Neither fixes the miss.**
+
+**Decision.**
+- **A is rejected.** It made forecasts worse overall, and the model makes little use of a franchise's best opening
+  even when it is correct.
+- **B is adopted as v3 (approved by the student 2026-11-23), locked alongside v1, v2 and Combined from the Nov 25 openings on.** The rule is v3 = v1 ×
+  exp(b · max(0, log v1 − log $25M)), with b = 0.126 fixed now from the 2017-2025 backtest errors and never refit
+  during the season. That is ×1.07 at a $43.6M forecast and ×1.19 at $100M; forecasts under $25M are unchanged. The
+  gain is small (−0.1 points overall, −0.6 points for 2022-25, 36 rather than 40 big films under-forecast), and it
+  is reported as such.
+- **v1 stays the official record.** Nothing already logged changes.
+
+**What this establishes (for the paper).** The big-film gap is a gap in **information**, not in model tuning.
+Events whose demand shows up in presales, book and social buzz look the same as ordinary franchise sequels to free
+public signals: on Wikipedia, *Sunrise on the Reaping* matched *Ballad* almost exactly, and it accelerated more
+slowly. The pre-registered **Combined** forecast (Amendment 7), which uses Hollywood's presale-informed projection,
+is the remedy this study can test. It said $69.3M for *Sunrise on the Reaping*.
+
+**Scope of v3.** b was fitted on CatBoost + attention errors at T-7. v3 is applied to whatever v1 forecast is logged;
+for the rare film locked at T-28 (ridge, no theater count) the stretch is untested and is reported as such. v3 is a
+fixed function of the locked v1, so it can be recomputed exactly from `forecasts/forecast_log.csv`; it is also
+logged in `forecasts/forecast_log_v3.csv`.
+
+**Also tested and not adopted (exploratory, from `data/processed/backtest_predictions.csv`, T-7, 2017-2025, 746 films).**
+Blends of the ridge and CatBoost forecasts, because ridge extrapolates and trees do not:
+
+| Variant | Typical miss | 2022-25 | $100M+: actual ÷ forecast |
+|---|---|---|---|
+| CatBoost + attention (v1) | 33.3% | 36.3% | ×1.76 |
+| 50/50 blend with ridge | 32.9% | 36.3% | ×1.55 |
+| Higher of the two when ridge > $50M | 33.8% | 36.3% | ×1.33 |
+
+The "higher of the two" guard fixes most of the big-film bias but overshoots (Avengers: Endgame forecast $680M,
+actual $357M) and makes the 85 films it touches worse (typical miss 26.9% → 32.8%); its threshold was also picked
+after seeing the data. Neither blend is adopted mid-season. Both are candidates for the 2027 model, to be re-tested
+on 2026 films that were not used to choose them.
+
+**Next step (not part of this amendment).** The big-film gap is about information, so the next candidate input is a
+free proxy for presales: Google Trends search interest before release. Daily logging of upcoming films starts
+2026-11-23 (`tracker/track_trends.py`); the historical backtest will be pre-registered as its own amendment before
+any result is seen.

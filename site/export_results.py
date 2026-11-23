@@ -16,11 +16,14 @@ import json
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
 FINAL = {"sunday_estimate", "bom_actual"}
 V2_FACTOR = 1.37  # must match models/forecast_live.py (Amendment 7)
+V3_B, V3_HINGE_M = 0.126, 25.0  # must match models/forecast_live.py (Amendment 9)
+A9_START = "2026-11-25"  # Amendment 9: v3 is scored from these openings on (earlier films: retro)
 A7_START = "2026-11-11"  # Amendment 7: v2 and Combined are locked and scored from these openings on
 A8_START = "2026-11-18"  # Amendment 8: equal-width range test; clean set starts with these openings
 SIDE_CASES = {"Wild Horse Nine"}  # limited releases, outside the model's population (HYPOTHESES.md): shown, not scored
@@ -117,6 +120,12 @@ def main():
                 o = f["ours"]
                 f["v2"] = {"forecast_m": num(o["forecast_m"] * fx), "low_m": num(o["low_m"] * fx),
                            "high_m": num(o["high_m"] * fx), "adjusted": bool(v.v2_adjusted), "basis": "retro"}
+        if f["ours"]["forecast_m"]:  # Amendment 9: v3 is a fixed function of the locked v1 forecast
+            fx3 = float(np.exp(V3_B * max(0.0, np.log(f["ours"]["forecast_m"] / V3_HINGE_M))))
+            o = f["ours"]
+            f["v3"] = {"forecast_m": num(o["forecast_m"] * fx3), "low_m": num(o["low_m"] * fx3),
+                       "high_m": num(o["high_m"] * fx3), "factor": round(fx3, 3),
+                       "basis": "locked" if str(r.release_date) >= A9_START else "retro"}
         if "hollywood" in f and f["ours"]["forecast_m"]:
             f["combined"] = {"forecast_m": num((f["ours"]["forecast_m"] * f["hollywood"]["mid_m"]) ** 0.5),
                              "basis": "locked" if str(r.release_date) >= A7_START else "retro"}
@@ -135,7 +144,8 @@ def main():
                           "closer": None if hi_err is None else ("ours" if om < hi_err else "hollywood" if hi_err < om else "tie"),
                           "provisional": a.status not in FINAL,
                           "v2_miss_pct": miss(av, f.get("v2", {}).get("forecast_m")),
-                          "combined_miss_pct": miss(av, f.get("combined", {}).get("forecast_m"))}
+                          "combined_miss_pct": miss(av, f.get("combined", {}).get("forecast_m")),
+                          "v3_miss_pct": miss(av, f.get("v3", {}).get("forecast_m"))}
             f["status"] = "graded"
         else:
             f["status"] = "awaiting_results"
@@ -178,6 +188,16 @@ def main():
                             "hollywood": med([f["grade"]["hollywood_miss_pct"] for f in a7])},
         "note": "Pre-registered 2026-11-08 (HYPOTHESES.md Amendment 7). Films before this date show v2/Combined as 'retro' only.",
     }
+    a9 = [f for f in g if f.get("v3", {}).get("basis") == "locked"]
+    summary["amendment9"] = {
+        "since": A9_START, "films": len(a9),
+        "median_miss_pct": {"v1": med([f["grade"]["our_miss_pct"] for f in a9]),
+                            "v3": med([f["grade"]["v3_miss_pct"] for f in a9]),
+                            "combined": med([f["grade"]["combined_miss_pct"] for f in a9 if f["grade"]["combined_miss_pct"] is not None]),
+                            "hollywood": med([f["grade"]["hollywood_miss_pct"] for f in a9 if f["grade"]["hollywood_miss_pct"] is not None])},
+        "big_films_note": "Backtest 2017-2025: v1 under-forecast 40 of 42 openings above $100M (median x1.76); v3 36 of 42 (x1.62).",
+        "note": "Pre-registered 2026-11-23 (HYPOTHESES.md Amendment 9). Films before Nov 25 show v3 as 'retro' only.",
+    }
     def fair(fs):
         fs = [f for f in fs if f["grade"]["hollywood_miss_pct"] is not None]
         om, hm = med([f["grade"]["our_miss_pct"] for f in fs]), med([f["grade"]["hollywood_miss_pct"] for f in fs])
@@ -209,6 +229,7 @@ def main():
             "draft": "The Oct 23 films were scored on drafts committed Oct 20 (the one-week lock-in did not run).",
             "provisional": "Graded on a Saturday projection; updated when Sunday estimates or final numbers arrive.",
             "v2": "v1 x 1.37 for non-English films opening in 2,000+ theaters (a blind spot found in the backtest); otherwise equal to v1.",
+            "v3": "v1 stretched upward above $25M (x1.07 at $44M, x1.19 at $100M; unchanged below $25M), because the model under-forecasts big openings.",
             "combined": "Geometric mean of our v1 forecast and Hollywood's midpoint; tests whether the two carry different information.",
             "matched": "Our forecast given Hollywood's range width (same high/low ratio), so 'inside the range' compares aim, not width.",
             "gap_ratio": "Our median miss divided by Hollywood's: how far free public data is from paid tracking (1.0 = level).",

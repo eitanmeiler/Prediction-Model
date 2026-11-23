@@ -32,6 +32,13 @@ BACKTEST = ROOT / "data" / "processed" / "backtest_predictions.csv"
 LOG = ROOT / "forecasts" / "forecast_log.csv"
 LOG_V2 = ROOT / "forecasts" / "forecast_log_v2.csv"  # Amendment 7
 V2_FACTOR = 1.37  # Amendment 7: fixed 2026-11-08, never refit during the season
+LOG_V3 = ROOT / "forecasts" / "forecast_log_v3.csv"  # Amendment 9
+V3_B, V3_HINGE_M = 0.126, 25.0  # Amendment 9: top-end stretch, fixed 2026-11-23, never refit during the season
+
+
+def v3_factor(forecast_m):
+    """Amendment 9: v3 = v1 * exp(b * max(0, log v1 - log $25M)); forecasts under $25M are unchanged."""
+    return np.exp(V3_B * np.maximum(0, np.log(np.asarray(forecast_m, dtype=float) / V3_HINGE_M)))
 
 
 def fit_ridge(train, feats):
@@ -146,9 +153,15 @@ def main():
     v2["v2_adjusted"] = flag.values
     for c in ("forecast_m", "lo80_m", "hi80_m"):
         v2["v2_" + c] = (res[c] * np.where(flag, V2_FACTOR, 1.0)).round(1)
+    # Amendment 9 (2026-11-23): v3 stretches big forecasts; same range ratio as v1. Logged separately like v2.
+    v3 = res[["frozen_at_utc", "git_commit", "film_id", "title", "release_date", "checkpoint"]].copy()
+    fx3 = v3_factor(res.forecast_m)
+    for c in ("forecast_m", "lo80_m", "hi80_m"):
+        v3["v3_" + c] = (res[c] * fx3).round(1)
     (ROOT / "forecasts").mkdir(exist_ok=True)
     if not args.films:  # a --films run (freezing only the due films) must not wipe the other drafts
         res.merge(v2[["film_id", "v2_adjusted", "v2_forecast_m", "v2_lo80_m", "v2_hi80_m"]], on="film_id") \
+           .merge(v3[["film_id", "v3_forecast_m", "v3_lo80_m", "v3_hi80_m"]], on="film_id") \
            .to_csv(ROOT / "forecasts" / "latest_draft.csv", index=False)  # read by the dashboard and the site
     pd.set_option("display.width", 220, "display.max_colwidth", 90)
     print(res[["title", "release_date", "checkpoint", "forecast_m", "lo80_m", "hi80_m", "primary_model", "ridge_m"]].to_string(index=False))
@@ -160,7 +173,8 @@ def main():
         LOG.parent.mkdir(exist_ok=True)
         res.to_csv(LOG, mode="a", header=not LOG.exists(), index=False)
         v2.to_csv(LOG_V2, mode="a", header=not LOG_V2.exists(), index=False)
-        print(f"\nFrozen: appended {len(res)} forecasts to {LOG} (and v2 to {LOG_V2.name}) — commit both now.")
+        v3.to_csv(LOG_V3, mode="a", header=not LOG_V3.exists(), index=False)
+        print(f"\nFrozen: appended {len(res)} forecasts to {LOG} (and v2/v3 to {LOG_V2.name}, {LOG_V3.name}) — commit all three now.")
 
 
 if __name__ == "__main__":

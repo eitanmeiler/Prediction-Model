@@ -1,0 +1,745 @@
+date,interest,anchor_interest,partial,query,kind,label,snapshot,film_id,title,release_date
+2026-08-23,2,55,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-24,2,33,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-25,2,39,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-26,2,32,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-27,2,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-28,1,53,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-29,2,67,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-30,2,55,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-31,2,30,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-01,1,32,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-02,2,31,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-03,9,31,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-04,12,41,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-05,9,60,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-06,9,60,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-07,5,50,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-08,3,30,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-09,3,28,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-10,2,28,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-11,2,38,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-12,4,49,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-13,7,42,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-14,4,26,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-15,2,27,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-16,3,30,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-17,16,30,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-18,7,41,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-19,5,49,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-20,4,43,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-21,0,23,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-22,2,27,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-23,3,33,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-24,2,32,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-25,3,44,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-26,2,58,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-27,4,48,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-28,1,29,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-29,2,31,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-09-30,3,29,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-01,3,33,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-02,3,43,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-03,4,58,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-04,4,44,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-05,2,31,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-06,2,36,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-07,1,33,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-08,2,35,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-09,3,46,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-10,4,58,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-11,4,47,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-12,6,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-13,11,33,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-14,5,33,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-15,3,35,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-16,3,49,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-17,4,59,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-18,4,49,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-19,4,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-20,7,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-21,11,35,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-22,9,37,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-23,8,44,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-24,17,55,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-25,12,49,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-26,9,32,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-27,13,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-28,12,39,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-29,15,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-30,8,42,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-10-31,10,51,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-01,15,47,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-02,14,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-03,25,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-04,13,28,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-05,23,39,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-06,31,50,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-07,33,65,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-08,40,53,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-09,35,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-10,29,37,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-11,32,44,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-12,47,34,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-13,42,42,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-14,42,61,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-15,43,49,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-16,38,35,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-17,33,37,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-18,33,41,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-19,54,41,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-20,53,53,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-21,61,69,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-22,77,58,False,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-11-23,100,43,True,/g/11ydktvdrh,topic,Focker-In-Law,2026-11-23,20261125_focker_in_law,Focker-in-Law,2026-11-25
+2026-08-23,6,80,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-24,4,47,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-25,3,56,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-26,2,47,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-27,3,49,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-28,3,77,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-29,5,98,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-30,5,80,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-31,3,43,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-01,4,46,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-02,5,44,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-03,4,45,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-04,4,59,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-05,5,87,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-06,5,87,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-07,5,72,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-08,3,43,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-09,5,41,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-10,5,41,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-11,5,56,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-12,6,71,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-13,5,61,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-14,4,37,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-15,3,40,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-16,3,44,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-17,3,43,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-18,4,60,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-19,5,71,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-20,0,62,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-21,6,33,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-22,2,39,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-23,4,48,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-24,7,46,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-25,4,64,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-26,6,85,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-27,6,70,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-28,5,43,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-29,4,45,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-09-30,10,42,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-01,5,48,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-02,8,63,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-03,8,84,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-04,6,64,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-05,7,45,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-06,5,52,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-07,5,48,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-08,6,51,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-09,6,66,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-10,7,84,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-11,9,69,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-12,26,50,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-13,54,48,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-14,15,49,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-15,13,50,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-16,10,71,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-17,14,86,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-18,13,71,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-19,10,50,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-20,12,49,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-21,23,51,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-22,16,53,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-23,20,64,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-24,27,79,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-25,21,71,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-26,16,47,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-27,18,50,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-28,20,56,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-29,23,49,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-30,25,62,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-10-31,34,75,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-01,33,69,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-02,23,49,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-03,36,50,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-04,18,40,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-05,22,57,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-06,27,73,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-07,26,95,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-08,23,78,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-09,22,49,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-10,30,54,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-11,36,64,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-12,33,49,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-13,54,61,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-14,74,88,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-15,58,71,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-16,46,51,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-17,43,54,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-18,48,60,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-19,56,59,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-20,66,77,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-21,95,100,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-22,93,85,False,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-11-23,96,63,True,/g/11xtbcyrfr,topic,Hexed,2026-11-23,20261125_hexed,Hexed,2026-11-25
+2026-08-23,3,80,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-24,0,47,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-25,0,56,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-26,0,47,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-27,0,49,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-28,0,77,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-29,0,98,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-30,2,80,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-31,0,43,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-01,0,46,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-02,0,44,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-03,0,45,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-04,1,59,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-05,0,87,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-06,2,87,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-07,0,72,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-08,0,43,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-09,0,41,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-10,0,41,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-11,0,56,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-12,2,71,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-13,0,61,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-14,0,37,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-15,0,40,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-16,0,44,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-17,0,43,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-18,1,60,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-19,0,71,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-20,7,62,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-21,4,33,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-22,0,39,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-23,0,48,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-24,0,46,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-25,0,64,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-26,0,85,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-27,2,70,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-28,0,43,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-29,0,45,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-09-30,0,42,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-01,0,48,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-02,1,63,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-03,1,84,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-04,0,64,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-05,0,45,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-06,0,52,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-07,0,48,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-08,0,51,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-09,1,66,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-10,2,84,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-11,2,69,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-12,3,50,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-13,2,48,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-14,2,49,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-15,0,50,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-16,0,71,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-17,2,86,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-18,0,71,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-19,2,50,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-20,2,49,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-21,2,51,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-22,2,53,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-23,0,64,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-24,2,79,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-25,2,71,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-26,1,47,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-27,2,50,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-28,3,56,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-29,2,49,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-30,3,62,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-10-31,2,75,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-01,4,69,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-02,3,49,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-03,3,50,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-04,4,40,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-05,10,57,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-06,7,73,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-07,14,95,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-08,13,78,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-09,24,49,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-10,13,54,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-11,13,64,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-12,13,49,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-13,12,61,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-14,17,88,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-15,28,71,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-16,14,51,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-17,13,54,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-18,14,60,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-19,14,59,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-20,15,77,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-21,21,100,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-22,21,85,False,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-11-23,23,66,True,/g/11v0hccwc1,topic,Violent Night 2,2026-11-23,20261204_violent_night_2,Violent Night 2,2026-12-04
+2026-08-23,30,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-24,23,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-25,20,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-26,18,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-27,16,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-28,16,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-29,19,10,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-30,22,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-31,16,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-01,14,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-02,15,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-03,13,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-04,12,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-05,15,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-06,15,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-07,16,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-08,12,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-09,11,4,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-10,11,4,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-11,12,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-12,13,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-13,12,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-14,9,4,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-15,9,4,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-16,9,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-17,9,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-18,8,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-19,11,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-20,16,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-21,13,4,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-22,11,4,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-23,16,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-24,18,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-25,24,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-26,28,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-27,26,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-28,23,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-29,20,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-09-30,19,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-01,17,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-02,17,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-03,20,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-04,22,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-05,19,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-06,18,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-07,18,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-08,15,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-09,15,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-10,19,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-11,21,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-12,24,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-13,19,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-14,18,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-15,18,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-16,16,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-17,16,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-18,18,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-19,16,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-20,14,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-21,14,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-22,14,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-23,20,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-24,32,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-25,26,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-26,20,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-27,17,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-28,20,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-29,30,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-30,30,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-10-31,23,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-01,25,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-02,24,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-03,20,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-04,22,4,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-05,24,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-06,25,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-07,27,10,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-08,29,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-09,27,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-10,25,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-11,55,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-12,51,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-13,47,7,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-14,56,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-15,54,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-16,56,5,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-17,55,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-18,62,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-19,50,6,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-20,38,8,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-21,44,11,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-22,45,9,False,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-11-23,100,7,True,/g/11s5740nj4,topic,Avengers: Doomsday,2026-11-23,20261218_avengers_doomsday,Avengers: Doomsday,2026-12-18
+2026-08-23,35,80,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-24,23,47,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-25,21,56,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-26,17,47,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-27,18,49,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-28,16,77,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-29,20,98,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-30,24,80,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-31,19,43,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-01,17,46,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-02,14,44,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-03,17,45,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-04,13,59,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-05,19,87,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-06,21,87,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-07,25,72,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-08,16,43,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-09,17,41,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-10,18,41,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-11,16,56,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-12,19,71,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-13,18,61,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-14,14,37,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-15,14,40,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-16,16,44,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-17,15,43,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-18,13,60,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-19,15,71,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-20,12,62,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-21,14,33,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-22,12,39,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-23,16,48,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-24,16,46,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-25,18,64,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-26,20,85,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-27,22,70,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-28,19,43,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-29,16,45,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-09-30,18,42,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-01,19,48,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-02,21,63,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-03,23,84,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-04,23,64,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-05,20,45,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-06,18,52,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-07,20,48,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-08,16,51,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-09,17,66,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-10,22,84,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-11,22,69,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-12,20,50,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-13,18,48,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-14,16,49,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-15,23,50,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-16,26,71,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-17,26,86,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-18,26,71,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-19,25,50,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-20,34,49,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-21,42,51,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-22,32,53,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-23,31,64,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-24,36,79,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-25,37,71,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-26,33,47,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-27,80,50,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-28,83,56,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-29,85,49,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-30,87,62,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-10-31,63,75,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-01,55,69,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-02,47,49,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-03,39,50,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-04,34,40,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-05,48,57,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-06,46,73,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-07,59,95,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-08,49,78,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-09,45,49,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-10,42,54,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-11,48,64,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-12,46,49,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-13,46,61,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-14,68,88,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-15,74,71,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-16,86,51,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-17,81,54,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-18,75,60,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-19,68,59,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-20,62,77,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-21,77,100,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-22,92,85,False,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-11-23,79,64,True,/g/11vwdwhnhn,topic,Dune: Part Three,2026-11-23,20261218_dune_part_three,Dune: Part Three,2026-12-18
+2026-08-23,3,80,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-24,2,47,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-25,2,56,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-26,2,47,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-27,3,49,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-28,4,77,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-29,7,98,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-30,8,80,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-31,7,43,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-01,6,46,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-02,5,44,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-03,5,45,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-04,4,59,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-05,5,87,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-06,6,87,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-07,7,72,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-08,6,43,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-09,3,41,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-10,3,41,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-11,3,56,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-12,3,71,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-13,4,61,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-14,4,37,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-15,3,40,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-16,2,44,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-17,0,43,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-18,3,60,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-19,6,71,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-20,6,62,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-21,0,33,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-22,0,39,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-23,2,48,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-24,3,46,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-25,0,64,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-26,2,85,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-27,3,70,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-28,3,43,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-29,3,45,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-09-30,0,42,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-01,2,48,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-02,2,63,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-03,4,84,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-04,4,64,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-05,3,45,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-06,2,52,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-07,2,48,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-08,2,51,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-09,4,66,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-10,3,84,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-11,5,69,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-12,3,50,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-13,2,48,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-14,2,49,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-15,3,50,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-16,3,71,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-17,3,86,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-18,3,71,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-19,4,50,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-20,4,49,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-21,2,51,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-22,3,53,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-23,3,64,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-24,2,79,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-25,3,71,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-26,3,47,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-27,2,50,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-28,4,56,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-29,3,49,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-30,2,62,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-10-31,4,75,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-01,4,69,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-02,3,49,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-03,5,50,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-04,38,40,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-05,47,57,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-06,25,73,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-07,19,95,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-08,14,78,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-09,11,49,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-10,9,54,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-11,8,64,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-12,7,49,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-13,7,61,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-14,8,88,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-15,9,71,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-16,7,51,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-17,7,54,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-18,6,60,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-19,6,59,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-20,7,77,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-21,9,100,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-22,8,85,False,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-11-23,7,64,True,/g/11y76nbv24,topic,The Angry Birds Movie 3,2026-11-23,20261223_the_angry_birds_movie_3,The Angry Birds Movie 3,2026-12-23
+2026-08-23,3,80,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-24,2,47,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-25,2,56,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-26,0,47,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-27,0,49,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-28,1,77,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-29,2,98,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-30,4,80,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-31,2,43,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-01,0,46,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-02,2,44,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-03,2,45,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-04,0,59,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-05,4,87,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-06,5,87,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-07,6,72,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-08,3,43,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-09,3,41,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-10,0,41,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-11,3,56,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-12,3,71,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-13,2,61,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-14,3,37,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-15,2,40,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-16,2,44,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-17,2,43,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-18,2,60,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-19,4,71,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-20,0,62,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-21,0,33,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-22,4,39,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-23,2,48,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-24,4,46,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-25,3,64,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-26,5,85,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-27,4,70,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-28,4,43,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-29,3,45,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-09-30,2,42,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-01,2,48,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-02,3,63,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-03,4,84,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-04,4,64,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-05,4,45,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-06,2,52,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-07,4,48,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-08,3,51,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-09,5,66,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-10,8,84,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-11,5,69,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-12,5,50,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-13,3,48,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-14,2,49,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-15,3,50,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-16,3,71,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-17,8,86,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-18,6,71,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-19,9,50,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-20,6,49,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-21,5,51,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-22,4,53,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-23,4,64,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-24,5,79,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-25,5,71,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-26,3,47,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-27,5,50,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-28,13,56,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-29,15,49,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-30,12,62,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-10-31,9,75,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-01,11,69,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-02,8,49,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-03,7,50,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-04,4,40,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-05,7,57,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-06,6,73,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-07,9,95,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-08,7,78,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-09,7,49,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-10,6,54,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-11,7,64,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-12,6,49,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-13,6,61,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-14,9,88,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-15,16,71,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-16,15,51,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-17,8,54,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-18,8,60,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-19,8,59,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-20,8,77,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-21,15,100,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-22,14,85,False,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-11-23,10,66,True,/g/11mlwcdn7p,topic,Jumanji: Open World,2026-11-23,20261225_jumanji_open_world,Jumanji: Open World,2026-12-25
+2026-08-23,2,80,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-08-24,2,47,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-08-25,2,56,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-08-26,2,47,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-08-27,2,49,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-08-28,3,77,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-08-29,4,98,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-08-30,4,80,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-08-31,2,43,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-01,2,46,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-02,5,44,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-03,3,45,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-04,3,59,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-05,2,87,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-06,2,87,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-07,4,72,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-08,2,43,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-09,3,41,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-10,4,41,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-11,4,56,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-12,3,71,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-13,3,61,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-14,3,37,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-15,3,40,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-16,3,44,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-17,3,43,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-18,2,60,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-19,6,71,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-20,0,62,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-21,0,33,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-22,4,39,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-23,6,48,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-24,5,46,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-25,5,64,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-26,26,85,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-27,36,70,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-28,18,43,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-29,13,45,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-09-30,9,42,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-01,8,48,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-02,7,63,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-03,8,84,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-04,6,64,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-05,5,45,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-06,5,52,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-07,4,48,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-08,3,51,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-09,5,66,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-10,4,84,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-11,5,69,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-12,5,50,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-13,5,48,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-14,4,49,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-15,4,50,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-16,5,71,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-17,5,86,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-18,7,71,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-19,5,50,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-20,4,49,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-21,4,51,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-22,4,53,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-23,5,64,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-24,12,79,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-25,8,71,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-26,19,47,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-27,13,50,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-28,13,56,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-29,9,49,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-30,7,62,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-10-31,7,75,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-01,8,69,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-02,7,49,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-03,6,50,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-04,5,40,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-05,6,57,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-06,7,73,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-07,8,95,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-08,9,78,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-09,7,49,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-10,7,54,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-11,12,64,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-12,11,49,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-13,12,61,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-14,12,88,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-15,11,71,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-16,12,51,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-17,14,54,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-18,14,60,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-19,11,59,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-20,10,77,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-21,11,100,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-22,11,85,False,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
+2026-11-23,11,68,True,/g/11w_m3xzgk,topic,Werwulf,2026-11-23,20261225_werwulf,Werwulf,2026-12-25
