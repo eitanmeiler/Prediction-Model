@@ -16,3 +16,4 @@ catboost_info/
 *.nosync
 .venv
 data/cache
+data/trends/history_run.log
