@@ -1,1 +1,3 @@
 frozen_at_utc,git_commit,film_id,title,release_date,checkpoint,v3_forecast_m,v3_lo80_m,v3_hi80_m
+2026-11-24T16:43:18Z,683486f,20261125_focker_in_law,Focker-in-Law,2026-11-25,T-7,22.6,12.8,51.2
+2026-11-24T16:43:18Z,683486f,20261125_hexed,Hexed,2026-11-25,T-7,19.1,10.8,43.3

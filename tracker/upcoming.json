@@ -63,12 +63,14 @@
   {
    "title": "Focker-in-Law",
    "release_date": "2026-11-25",
-   "distributor": "Universal Pictures"
+   "distributor": "Universal Pictures",
+   "open_theaters": 3500
   },
   {
    "title": "Hexed",
    "release_date": "2026-11-25",
-   "distributor": "Walt Disney Studios Motion Pictures"
+   "distributor": "Walt Disney Studios Motion Pictures",
+   "open_theaters": 3500
   },
   {
    "title": "Violent Night 2",
